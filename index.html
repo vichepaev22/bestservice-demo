@@ -1,0 +1,1958 @@
+<!doctype html>
+<html lang="ru">
+  <head><meta http-equiv="Content-Security-Policy" content="default-src &#x27;self&#x27; data: blob:; script-src &#x27;self&#x27; &#x27;unsafe-inline&#x27;; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27;; img-src &#x27;self&#x27; data: blob:; font-src &#x27;self&#x27; data:; connect-src &#x27;none&#x27;; form-action &#x27;none&#x27;; base-uri &#x27;none&#x27;; object-src &#x27;none&#x27;">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BestService · интерактивная демоверсия</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 32 32&#x27;%3E%3Crect width=&#x27;32&#x27; height=&#x27;32&#x27; rx=&#x27;8&#x27; fill=&#x27;%230d6efd&#x27;/%3E%3Cpath d=&#x27;M9 9h14v14H9z&#x27; fill=&#x27;none&#x27; stroke=&#x27;white&#x27; stroke-width=&#x27;2&#x27;/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./static/styles.css">
+    
+<link rel="stylesheet" href="./static/report-design.css">
+<link rel="stylesheet" href="./static/report-reading.css">
+<script src="./static/report-studio.js" defer></script>
+<script src="./static/report-navigation.js" defer></script>
+<link rel="stylesheet" href="./static/service-blueprint.css">
+<script src="./static/implementation-plan.js" defer></script>
+<script src="./static/service-blueprint.js" defer></script>
+<link rel="stylesheet" href="./static/report-wide.css">
+<link rel="stylesheet" href="./static/source-intake.css">
+
+<link rel="stylesheet" href="./static/report-studio.css">
+
+    <link rel="stylesheet" href="./static/experience.css">
+    <link rel="stylesheet" href="./static/form-feedback.css">
+    <script src="./static/experience.js" defer></script>
+  <meta name="referrer" content="no-referrer"><link rel="stylesheet" href="./static/demo.css"></head>
+  <body class="report-studio">
+    
+<a class="studio-skip" href="#executive" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён">К содержимому</a>
+<button type="button" class="studio-backdrop" data-studio-backdrop tabindex="-1" aria-label="Закрыть меню" hidden></button>
+<aside class="studio-sidebar" id="report-sidebar" aria-label="Разделы демонстрации">
+  <a class="studio-brand" href="./index.html" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span><span>BestService<small>Клиентский опыт</small></span></a>
+  <div class="studio-project"><svg aria-hidden="true"><use href="#icon-project"></use></svg><span>Автосервис «Пример»<small>Учебный проект · B2C</small></span></div>
+  <div class="studio-sidebar-scroll">
+    <nav class="studio-report-nav" aria-label="Разделы отчёта">
+      <p class="studio-nav-heading">Отчёты</p>
+      
+      <a data-studio-link href="#executive" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><svg aria-hidden="true"><use href="#icon-report"></use></svg><span>Итог аудита</span></a><a data-studio-link href="#actions" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><svg aria-hidden="true"><use href="#icon-backlog"></use></svg><span>Что улучшить</span></a><a data-studio-link href="#business-impact" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><svg aria-hidden="true"><use href="#icon-money"></use></svg><span>Влияние на бизнес</span></a><a data-studio-link href="#cjm" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><svg aria-hidden="true"><use href="#icon-map"></use></svg><span>Путь клиента</span></a><a data-studio-link href="#service-blueprint" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><svg aria-hidden="true"><use href="#icon-next"></use></svg><span>План внедрения · RACI</span></a><a data-studio-link href="#jtbd" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><svg aria-hidden="true"><use href="#icon-jtbd"></use></svg><span>Задачи клиента</span></a><a data-studio-link href="#personas" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><svg aria-hidden="true"><use href="#icon-personas"></use></svg><span>Типы клиентов</span></a><a data-studio-link href="#sentiment" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><svg aria-hidden="true"><use href="#icon-sentiment"></use></svg><span>Тональность отзывов</span></a><a data-studio-link href="#signals" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><svg aria-hidden="true"><use href="#icon-signals"></use></svg><span>Боли и сильные стороны</span></a><a data-studio-link href="#research" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><svg aria-hidden="true"><use href="#icon-strength"></use></svg><span>Надёжность данных</span></a><a data-studio-link href="#reviews" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><svg aria-hidden="true"><use href="#icon-reviews"></use></svg><span>Исходные отзывы</span></a>
+    </nav>
+    <nav class="studio-workspace-nav" aria-label="Демонстрация продукта"><p class="studio-nav-heading">Продукт</p><a href="./competitors.html" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><svg aria-hidden="true"><use href="#icon-model"></use></svg><span>Радар конкурентов</span></a><a href="https://nedelsky.pages.dev/#projects" rel="noopener noreferrer" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><svg aria-hidden="true"><use href="#icon-project"></use></svg><span>О проекте и авторе</span></a></nav>
+  </div>
+  <div class="studio-sidebar-bottom"><button class="studio-settings-button" type="button" data-studio-settings-open hidden><svg aria-hidden="true"><use href="#icon-mode"></use></svg><span>Настройки интерфейса</span></button><div class="studio-readonly"><span class="studio-avatar" aria-hidden="true"><svg><use href="#icon-report"></use></svg></span><span>Демонстрация<small>Без входа и API</small></span></div></div>
+</aside>
+<dialog class="studio-settings" data-studio-settings aria-labelledby="studio-settings-title"><div class="studio-settings-head"><h2 id="studio-settings-title">Настройки интерфейса</h2><form method="dialog"><button type="submit" aria-label="Закрыть настройки">Закрыть</button></form></div><p>Меняются только визуальные эффекты в вашем браузере.</p><div data-studio-effects-slot></div><p class="studio-settings-note">Учитывается системная настройка уменьшения движения.</p></dialog>
+<noscript><style>.report-studio .studio-sidebar{position:static;width:auto;transform:none;visibility:visible}.report-studio .studio-sidebar-scroll{overflow:visible}body.report-studio:has([data-report-layout]) .page{margin:0;width:100%;padding:0}.report-studio .studio-menu-button{display:none}</style></noscript>
+
+    <main class="page"><aside class="demo-notice" id="demo-notice"><strong>Интерактивная демонстрация BestService</strong><p>Учебные отзывы и публикации, не реальный бизнес. Переключайте разделы, изучайте доказательства, составляйте план внедрения. Изменения плана остаются только в вашем браузере. Вход, загрузка данных, поиск и нейросети здесь не подключены.</p></aside>
+      
+      
+<div class="report-wide-layout" data-report-layout="wide-left" data-report-studio data-studio-default="executive" data-studio-scope="project-0">
+<header class="studio-topbar"><button type="button" class="studio-menu-button" data-studio-menu aria-controls="report-sidebar" aria-expanded="false"><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><span>Меню</span></button><div class="studio-breadcrumb"><a class="studio-project-breadcrumb" href="./index.html" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён">Автосервис «Пример»</a><span aria-hidden="true">/</span><strong data-studio-current>Итог аудита</strong></div><div class="studio-topbar-actions"><span class="studio-saved-state">Демо · учебные данные</span></div></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+<svg class="icon-sprite" aria-hidden="true" focusable="false">
+  <symbol id="icon-project" viewbox="0 0 24 24">
+    <path d="M4 7.5h16M7 7.5V5.8C7 4.8 7.8 4 8.8 4h6.4c1 0 1.8.8 1.8 1.8v1.7M5.5 7.5h13c.8 0 1.5.7 1.5 1.5v9.5c0 .8-.7 1.5-1.5 1.5h-13c-.8 0-1.5-.7-1.5-1.5V9c0-.8.7-1.5 1.5-1.5Z"></path>
+    <path d="M9 13h6"></path>
+  </symbol>
+  <symbol id="icon-reviews" viewbox="0 0 24 24">
+    <path d="M5.5 5h13c1 0 1.7.8 1.7 1.7v7.7c0 1-.8 1.7-1.7 1.7H11l-4.3 3.2v-3.2H5.5c-1 0-1.7-.8-1.7-1.7V6.7C3.8 5.8 4.6 5 5.5 5Z"></path>
+    <path d="M7.5 9h9M7.5 12h6"></path>
+  </symbol>
+  <symbol id="icon-mode" viewbox="0 0 24 24">
+    <path d="M8 8h8v8H8z"></path>
+    <path d="M5 9.5H3M5 14.5H3M21 9.5h-2M21 14.5h-2M9.5 5V3M14.5 5V3M9.5 21v-2M14.5 21v-2"></path>
+  </symbol>
+  <symbol id="icon-model" viewbox="0 0 24 24">
+    <path d="m12 3 7.5 4.3v8.4L12 20l-7.5-4.3V7.3L12 3Z"></path>
+    <path d="m4.8 7.5 7.2 4.2 7.2-4.2M12 11.7V20"></path>
+  </symbol>
+  <symbol id="icon-report" viewbox="0 0 24 24">
+    <path d="M7 3.8h7.5L19 8.3V20H7c-1.1 0-2-.9-2-2V5.8c0-1.1.9-2 2-2Z"></path>
+    <path d="M14.5 3.8v4.5H19M8.5 13h7M8.5 16h5"></path>
+  </symbol>
+  <symbol id="icon-map" viewbox="0 0 24 24">
+    <path d="M5 18.5c3-5.5 11-2.5 14-8.8"></path>
+    <circle cx="5" cy="18.5" r="2"></circle>
+    <circle cx="12" cy="12" r="2"></circle>
+    <circle cx="19" cy="9.7" r="2"></circle>
+  </symbol>
+  <symbol id="icon-sentiment" viewbox="0 0 24 24">
+    <path d="M4.5 15.5a7.5 7.5 0 0 1 15 0"></path>
+    <path d="m12 15.5 4-5"></path>
+    <path d="M6.5 18h13"></path>
+  </symbol>
+  <symbol id="icon-jtbd" viewbox="0 0 24 24">
+    <circle cx="12" cy="12" r="8"></circle>
+    <circle cx="12" cy="12" r="4.2"></circle>
+    <circle cx="12" cy="12" r="1.4"></circle>
+  </symbol>
+  <symbol id="icon-personas" viewbox="0 0 24 24">
+    <circle cx="9" cy="8" r="3"></circle>
+    <circle cx="17" cy="9" r="2.3"></circle>
+    <path d="M4 19c.8-3.4 2.7-5.2 5-5.2s4.2 1.8 5 5.2"></path>
+    <path d="M13.8 16.2c.8-1.5 1.9-2.3 3.2-2.3 1.8 0 3.2 1.5 3.8 4.1"></path>
+  </symbol>
+  <symbol id="icon-signals" viewbox="0 0 24 24">
+    <path d="M3.5 12h4l2-5 4 10 2-5h5"></path>
+  </symbol>
+  <symbol id="icon-backlog" viewbox="0 0 24 24">
+    <path d="M7 6h10M7 12h10M7 18h10"></path>
+    <path d="m3.5 6 1 1 2-2M3.5 12l1 1 2-2M3.5 18l1 1 2-2"></path>
+  </symbol>
+  <symbol id="icon-pain" viewbox="0 0 24 24">
+    <path d="m12 4 9 16H3L12 4Z"></path>
+    <path d="M12 9v5M12 17.5v.1"></path>
+  </symbol>
+  <symbol id="icon-strength" viewbox="0 0 24 24">
+    <path d="M12 3.5 19 6v5.5c0 4.2-2.8 7.1-7 9-4.2-1.9-7-4.8-7-9V6l7-2.5Z"></path>
+    <path d="m8.8 12.2 2.2 2.2 5-5"></path>
+  </symbol>
+  <symbol id="icon-money" viewbox="0 0 24 24">
+    <path d="M4 7h16v10H4z"></path>
+    <path d="M7 10.5h.1M17 13.5h.1"></path>
+    <circle cx="12" cy="12" r="2.6"></circle>
+  </symbol>
+  <symbol id="icon-next" viewbox="0 0 24 24">
+    <path d="M5 12h13"></path>
+    <path d="m13 7 5 5-5 5"></path>
+    <path d="M5 6h5M5 18h5"></path>
+  </symbol>
+</svg>
+
+
+<section class="project-hero">
+  <div class="studio-cover" aria-hidden="true"><svg viewbox="0 0 24 24"><use href="#icon-report"></use></svg><span>BestService</span></div>
+  <div class="project-title">
+    <div class="section-title-line project-title-line">
+      <span class="section-icon section-icon-primary"><svg><use href="#icon-project"></use></svg></span>
+      <div>
+        <p class="eyebrow">Аудит клиентского опыта</p>
+        <h1>Автосервис «Пример»</h1>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span>Автосервис</span>
+      <span>B2C</span>
+      <span>Учебный город</span>
+    </div>
+  </div>
+  
+</section>
+
+<section class="summary-strip" aria-label="Сводка проекта">
+  <div class="metric-tile">
+    <span class="tile-icon"><svg><use href="#icon-reviews"></use></svg></span>
+    <span class="metric-label">Отзывы</span>
+    <strong>8</strong>
+  </div>
+  <div class="metric-tile">
+    <span class="tile-icon"><svg><use href="#icon-mode"></use></svg></span>
+    <span class="metric-label">Режим</span>
+    <strong>Локальный</strong>
+  </div>
+  <div class="metric-tile">
+    <span class="tile-icon"><svg><use href="#icon-model"></use></svg></span>
+    <span class="metric-label">Движок</span>
+    <strong>Rule-based</strong>
+  </div>
+  <div class="metric-tile">
+    <span class="tile-icon"><svg><use href="#icon-report"></use></svg></span>
+    <span class="metric-label">Последний отчет</span>
+    <strong>Учебный отчёт · 23 октября 2026</strong>
+  </div>
+</section>
+
+
+
+
+<div class="report-actions">
+  <button type="button" class="btn btn-secondary" data-print-report>Сохранить отчёт в PDF</button>
+  <a class="btn btn-secondary" href="./competitors.html" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён">Радар возможностей среди конкурентов <span aria-hidden="true">→</span></a>
+  <span class="muted">В окне печати выберите «Сохранить как PDF».</span>
+</div>
+
+<div class="report-play-toolbar" data-report-controls hidden>
+  <p><span class="report-play-dot" aria-hidden="true"></span>Наведите курсор на карточки: свет следует за движением. Данные остаются неизменными.</p>
+  <button class="report-control-button" type="button" data-cursor-toggle aria-pressed="false">Отключить эффекты курсора</button>
+</div>
+
+
+<section class="report-section executive-report" id="executive">
+  <div class="report-cover-head">
+    <div>
+      <p class="eyebrow">Экспресс-отчет</p>
+      <h2>Короткая картина по отзывам</h2>
+      <p>Основные выводы за 1-2 минуты: состояние опыта, метрики, риски и быстрые действия.</p>
+    </div>
+    <div class="report-period">
+      <span>Период</span>
+      <strong>Учебный отчёт · 23 октября 2026</strong>
+    </div>
+  </div>
+
+  <div class="express-hero-grid">
+    <article class="friction-card executive-state-risk">
+      <span class="friction-icon"><svg><use href="#icon-pain"></use></svg></span>
+      <div>
+        <span class="state-pill">Зона риска</span>
+        <h3>Негатив заметен для будущих клиентов и может снижать доверие до обращения.</h3>
+        <p>Картина смешанная: есть заметные зоны для улучшения. Ключевые зоны трения: Цена и ценность, Поддержка и коммуникация, Скорость и время.</p>
+      </div>
+    </article>
+    <aside class="report-visual-card" aria-label="Иллюстрация отзывов, не данные анализа">
+      <div class="review-stream-heading">
+        <span>Иллюстрация отзывов</span>
+        <button type="button" class="review-stream-toggle" data-review-pause aria-label="Приостановить анимацию отзывов" aria-pressed="false" title="Приостановить анимацию">
+          <svg viewbox="0 0 20 20" aria-hidden="true"><path data-review-pause-icon d="M7 5v10M13 5v10"></path></svg>
+        </button>
+      </div>
+      <div class="review-stream" data-review-stream data-running="false" aria-hidden="true">
+        
+        <div class="review-bubble" data-sentiment="positive" style="--review-delay: -0s; --review-left: 5%">
+          <div class="review-bubble-heading">
+            <span class="review-bubble-avatar"></span>
+            <span class="review-bubble-author"></span>
+            <span class="review-bubble-reaction">🙂</span>
+            <span class="review-bubble-question">?</span>
+          </div>
+          <div class="review-bubble-lines"><i></i><i></i><i></i></div>
+        </div>
+        
+        <div class="review-bubble" data-sentiment="neutral" style="--review-delay: -4s; --review-left: 18%">
+          <div class="review-bubble-heading">
+            <span class="review-bubble-avatar"></span>
+            <span class="review-bubble-author"></span>
+            <span class="review-bubble-reaction">😐</span>
+            <span class="review-bubble-question">?</span>
+          </div>
+          <div class="review-bubble-lines"><i></i><i></i><i></i></div>
+        </div>
+        
+        <div class="review-bubble" data-sentiment="negative" style="--review-delay: -8s; --review-left: 9%">
+          <div class="review-bubble-heading">
+            <span class="review-bubble-avatar"></span>
+            <span class="review-bubble-author"></span>
+            <span class="review-bubble-reaction">😕</span>
+            <span class="review-bubble-question">?</span>
+          </div>
+          <div class="review-bubble-lines"><i></i><i></i><i></i></div>
+        </div>
+        
+      </div>
+      <p>Отзывы показывают не только оценку, но и скрытые причины выбора, сомнений и повторных обращений.</p>
+    </aside>
+  </div>
+
+  <div class="sentiment-card">
+    <div class="stacked-meter" aria-label="Распределение тональности">
+      <span class="meter-positive" style="width: 50.0%"></span>
+      <span class="meter-neutral" style="width: 12.5%"></span>
+      <span class="meter-negative" style="width: 37.5%"></span>
+    </div>
+    <div class="sentiment-legend sentiment-legend-spread" aria-label="Легенда тональности">
+      <span><i class="legend-dot legend-positive"></i>Позитив 50.0% / 4</span>
+      <span><i class="legend-dot legend-neutral"></i>Нейтрально 12.5% / 1</span>
+      <span><i class="legend-dot legend-negative"></i>Негатив 37.5% / 3</span>
+    </div>
+  </div>
+
+  <div class="express-metrics-grid">
+    <article class="express-metric-card">
+      <span class="panel-icon"><svg><use href="#icon-sentiment"></use></svg></span>
+      <div>
+        <strong>3.5</strong>
+        <span>Средняя оценка</span>
+        <small class="metric-source">
+          
+          По 8 оценкам в выборке анализа
+          
+        </small>
+      </div>
+    </article>
+    <article class="express-metric-card">
+      <span class="panel-icon"><svg><use href="#icon-reviews"></use></svg></span>
+      <div>
+        <strong>8</strong>
+        <span>Проанализировано отзывов</span>
+      </div>
+    </article>
+    <article class="express-metric-card">
+      <span class="panel-icon"><svg><use href="#icon-strength"></use></svg></span>
+      <div>
+        <strong>50.0%</strong>
+        <span>Позитивных сигналов</span>
+      </div>
+    </article>
+    <article class="express-metric-card">
+      <span class="panel-icon"><svg><use href="#icon-pain"></use></svg></span>
+      <div>
+        <strong>3</strong>
+        <span>Главных тем риска</span>
+      </div>
+    </article>
+  </div>
+
+  <div class="express-columns-grid">
+    <article class="mini-report-panel mini-report-panel-risk">
+      <div class="mini-panel-head">
+        <h3>3 главные боли клиентов</h3>
+        <span>Риски</span>
+      </div>
+      
+      
+      <div class="signal-row-card">
+        <span class="signal-rank">1</span>
+        <div>
+          <strong>Цена и ценность</strong>
+          <p>Стоимость выросла после диагностики, а узнал я об этом только при оплате.</p>
+          <div class="signal-progress"><span style="width: 12.0%"></span></div>
+        </div>
+        <em>12.0%</em>
+      </div>
+      
+      
+      <div class="signal-row-card">
+        <span class="signal-rank">2</span>
+        <div>
+          <strong>Поддержка и коммуникация</strong>
+          <p>Машину задержали на день. Чтобы узнать статус ремонта, пришлось несколько раз звонить самому.</p>
+          <div class="signal-progress"><span style="width: 12.0%"></span></div>
+        </div>
+        <em>12.0%</em>
+      </div>
+      
+      
+      <div class="signal-row-card">
+        <span class="signal-rank">3</span>
+        <div>
+          <strong>Скорость и время</strong>
+          <p>Машину задержали на день. Чтобы узнать статус ремонта, пришлось несколько раз звонить самому.</p>
+          <div class="signal-progress"><span style="width: 12.0%"></span></div>
+        </div>
+        <em>12.0%</em>
+      </div>
+      
+    </article>
+
+    <article class="mini-report-panel mini-report-panel-strength">
+      <div class="mini-panel-head">
+        <h3>3 сильные стороны</h3>
+        <span>Опоры</span>
+      </div>
+      
+      <p class="empty-text">Сильные стороны появятся после более насыщенного анализа.</p>
+      
+    </article>
+  </div>
+</section>
+
+<section class="report-section" id="actions">
+  <header class="report-section-intro report-chapter">
+  <div class="report-chapter-main">
+    <span class="report-chapter-icon"><svg viewbox="0 0 24 24" aria-hidden="true" focusable="false">
+  
+  <path d="m3 6 2 2 3-4m-5 8 2 2 3-4m-5 8 2 2 3-4m3-10h10m-10 6h10m-10 6h10"></path>
+  
+</svg></span>
+    <div class="report-chapter-copy">
+      <p class="eyebrow">План действий</p>
+      <h2>Что улучшить в первую очередь</h2>
+      <p class="report-chapter-context">Список действий разбит по срокам: быстрые правки, системные улучшения и идеи, которые сначала нужно проверить.</p>
+    </div>
+  </div>
+  <aside class="report-chapter-benefit" aria-label="Практическая польза раздела: Что улучшить в первую очередь" data-cursor-card data-motion-scene data-playing="false">
+    <div class="report-chapter-scene-head"><span>Зачем этот раздел</span><button type="button" class="report-motion-toggle" data-motion-toggle aria-pressed="false">Пауза</button></div>
+    <div class="report-chapter-illustration" title="Смысловая иллюстрация, не график данных"><svg class="chapter-scene chapter-scene-action" viewbox="0 0 320 138" aria-hidden="true" focusable="false">
+  
+  
+  <g class="scene-plan-row" style="--scene-delay: 0.0s"><rect class="scene-paper-back" x="46" y="12" width="228" height="33" rx="9"></rect><rect class="scene-paper" x="57" y="20" width="17" height="17" rx="5"></rect><path class="scene-check scene-tick" d="m61 28 4 4 7-8"></path><text class="scene-plan-label" x="93" y="34">7 дней</text><path class="scene-line" d="M170 29h85"></path></g>
+  
+  <g class="scene-plan-row" style="--scene-delay: 1.6s"><rect class="scene-paper-back" x="46" y="53" width="228" height="33" rx="9"></rect><rect class="scene-paper" x="57" y="61" width="17" height="17" rx="5"></rect><path class="scene-check scene-tick" d="m61 69 4 4 7-8"></path><text class="scene-plan-label" x="93" y="75">30 дней</text><path class="scene-line" d="M170 70h85"></path></g>
+  
+  <g class="scene-plan-row" style="--scene-delay: 3.2s"><rect class="scene-paper-back" x="46" y="94" width="228" height="33" rx="9"></rect><rect class="scene-paper" x="57" y="102" width="17" height="17" rx="5"></rect><path class="scene-check scene-tick" d="m61 110 4 4 7-8"></path><text class="scene-plan-label" x="93" y="116">90 дней</text><path class="scene-line" d="M170 111h85"></path></g>
+  
+  
+</svg></div>
+    <p class="report-chapter-benefit-text">Превращает выводы исследования в последовательный план изменений на 7, 30 и 90 дней.</p>
+  </aside>
+</header>
+  
+  
+
+
+
+<div class="report-comparison-scroll" tabindex="0" role="region" aria-label="План изменений на 7, 30 и 90 дней">
+  <table class="report-comparison-table action-plan-table">
+    <caption>Слева направо — сроки изменений. Сверху вниз — шаги в каждом периоде. Пустые ячейки оставлены без выдуманных задач.</caption>
+    <thead><tr><th scope="col"><span class="report-period-label">7 дней</span><h3>Быстро снизить трение</h3></th><th scope="col"><span class="report-period-label">30 дней</span><h3>Закрепить изменения в сервисе</h3></th><th scope="col"><span class="report-period-label">90 дней</span><h3>Проверить продуктовые гипотезы</h3></th></tr></thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="report-plan-step"><span class="report-step-index" aria-hidden="true">1</span><p>Расширить выборку минимум до 10–15 содержательных отзывов перед принятием продуктовых решений.</p></div>
+          
+        </td>
+      
+        <td>
+          <div class="report-plan-step"><span class="report-step-index" aria-hidden="true">1</span><p>Обучите фронт-линию коротким скриптам для сложных ситуаций.</p></div>
+          
+        </td>
+      
+        <td>
+          <div class="report-plan-step"><span class="report-step-index" aria-hidden="true">1</span><p>Вернуться к отчету после новых отзывов и проверить, изменились ли ключевые боли.</p></div>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <div class="report-plan-step"><span class="report-step-index" aria-hidden="true">2</span><p>Показывайте финальную стоимость до оплаты и объясняйте, что включено.</p></div>
+          
+        </td>
+      
+        <td>
+          <div class="report-plan-step"><span class="report-step-index" aria-hidden="true">2</span><p>Покажите реальное время ожидания и внедрите управление очередью в пиковые часы.</p></div>
+          
+        </td>
+      
+        <td class="report-empty-cell">
+          <span class="report-empty-label" aria-hidden="true">—</span><span class="sr-only">Других шагов в этом периоде не указано</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  <a class="btn blueprint-cta" href="#service-blueprint" data-blueprint-open src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён">Кто и что меняет в сервисе <span aria-hidden="true">→</span></a>
+  
+</section>
+
+<section class="report-section business-impact-section" id="business-impact">
+  <header class="report-section-intro report-chapter">
+  <div class="report-chapter-main">
+    <span class="report-chapter-icon"><svg viewbox="0 0 24 24" aria-hidden="true" focusable="false">
+  
+  <rect x="3" y="6" width="18" height="12" rx="3"></rect><circle cx="12" cy="12" r="3"></circle><path d="M6 10v4m12-4v4"></path>
+  
+</svg></span>
+    <div class="report-chapter-copy">
+      <p class="eyebrow">Бизнес-влияние</p>
+      <h2>Где отзывы могут влиять на заявки и доверие</h2>
+      <p class="report-chapter-context">Здесь факты из отзывов отделены от гипотез о бизнесе. Влияние на заявки и выручку нужно проверять по данным продаж, а не вычислять из тональности.</p>
+    </div>
+  </div>
+  <aside class="report-chapter-benefit" aria-label="Практическая польза раздела: Где отзывы могут влиять на заявки и доверие" data-cursor-card data-motion-scene data-playing="false">
+    <div class="report-chapter-scene-head"><span>Зачем этот раздел</span><button type="button" class="report-motion-toggle" data-motion-toggle aria-pressed="false">Пауза</button></div>
+    <div class="report-chapter-illustration" title="Смысловая иллюстрация, не график данных"><svg class="chapter-scene chapter-scene-growth" viewbox="0 0 320 138" aria-hidden="true" focusable="false">
+  
+  <path class="scene-route" d="M64 67h194"></path><path class="scene-trace" d="M64 67h194"></path>
+  <g class="scene-float"><rect class="scene-paper" x="21" y="33" width="74" height="68" rx="15"></rect><path class="scene-ink" d="M39 50h37M39 63h25M40 84v-9h33"></path></g>
+  <g class="scene-focus-pulse"><rect class="scene-paper-back" x="124" y="33" width="74" height="68" rx="15"></rect><circle class="scene-line" cx="161" cy="67" r="19"></circle><circle class="scene-line" cx="161" cy="67" r="8"></circle></g>
+  <g class="scene-float scene-delay-2"><rect class="scene-paper" x="227" y="33" width="74" height="68" rx="15"></rect><path class="scene-check" d="m246 67 12 12 24-25"></path></g>
+  <text class="scene-label" x="58" y="127">Сигнал</text><text class="scene-label" x="161" y="127">Приоритет</text><text class="scene-label" x="264" y="127">Действие</text>
+  
+</svg></div>
+    <p class="report-chapter-benefit-text">Помогает выбрать, какую проблему проверить первой, и сформулировать гипотезу для улучшения клиентского опыта.</p>
+  </aside>
+</header>
+  <p class="wide-metric-guide">Сигнал риска — что мешает клиентам. Сильная сторона — что они ценят. Предлагаемые действия — что можно проверить и изменить. Эти показатели не измеряют потери или рост выручки.</p>
+  <div class="business-kpi-grid">
+    <article class="business-kpi business-kpi-negative">
+      <span class="panel-icon panel-icon-negative"><svg><use href="#icon-pain"></use></svg></span>
+      <div>
+        <span class="wide-metric-kind">Сигнал риска</span>
+        <strong>37.5%</strong>
+        <span>Доля негативных отзывов</span>
+        <p>3 из 8 классифицированных отзывов. Это не процент потерянных заявок.</p>
+      </div>
+    </article>
+    <article class="business-kpi business-kpi-negative">
+      <span class="panel-icon panel-icon-negative"><svg><use href="#icon-reviews"></use></svg></span>
+      <div>
+        <span class="wide-metric-kind">Сигнал риска</span>
+        <strong>1</strong>
+        <span>Повторяющихся болевых сигналов</span>
+        <p>Цена и ценность</p>
+      </div>
+    </article>
+    <article class="business-kpi business-kpi-positive">
+      <span class="panel-icon panel-icon-positive"><svg><use href="#icon-strength"></use></svg></span>
+      <div>
+        <span class="wide-metric-kind">Сильная сторона</span>
+        <strong>50.0%</strong>
+        <span>Доля позитивных отзывов</span>
+        <p>4 из 8 классифицированных отзывов. Позитив не равен готовности рекомендовать.</p>
+      </div>
+    </article>
+    <article class="business-kpi business-kpi-action">
+      <span class="panel-icon"><svg><use href="#icon-backlog"></use></svg></span>
+      <div>
+        <span class="wide-metric-kind">Предлагаемые действия</span>
+        <strong>4</strong>
+        <span>Улучшений для проверки</span>
+        <p>Собраны шаги, которые можно превратить в план внедрения.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="report-comparison-scroll" tabindex="0" role="region" aria-label="Что проверить и на что опираться в бизнесе">
+  <table class="report-comparison-table business-context-table">
+    <caption>Сравнение направлений работы: проблема, опора и задача клиента. Влияние на заявки проверяется отдельно.</caption>
+    <thead><tr><th scope="col">Риск: что проверить</th><th scope="col">Сильная сторона: что сохранить</th><th scope="col">Задача клиента: что обеспечить</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><h3>Цена и ценность</h3></td>
+        <td><h3>Недостаточно позитивных сигналов</h3></td>
+        <td><h3>Когда нужно выбрать решение в рамках понятного бюджета, клиент хочет понимать справедливую цену и не переплачивать, чтобы быть уверенным, что цена справедлива и нет скрытой переплаты.</h3></td>
+      </tr>
+      <tr>
+        <td><p class="report-evidence-text">Стоимость выросла после диагностики, а узнал я об этом только при оплате.</p></td>
+        <td><p>Нужно накопить больше подробных отзывов, чтобы увидеть повторяющийся мотив выбора.</p></td>
+        <td><p>Чаще всего сигналы проявляются на этапе «Покупка».</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</section>
+
+<section class="report-section research-section" id="research">
+  <header class="report-section-intro report-chapter">
+  <div class="report-chapter-main">
+    <span class="report-chapter-icon"><svg viewbox="0 0 24 24" aria-hidden="true" focusable="false">
+  
+  <path d="M6 3h9l4 4v14H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm9 0v5h4M8 12h7M8 16h5"></path>
+  
+</svg></span>
+    <div class="report-chapter-copy">
+      <p class="eyebrow">Обзор исследования</p>
+      <h2>Надежность данных и ключевые инсайты</h2>
+      <p class="report-chapter-context">Сначала проверяем, чему можно доверять: объем выборки, насыщенность текстов, ограничения и только затем интерпретации.</p>
+    </div>
+  </div>
+  <aside class="report-chapter-benefit" aria-label="Практическая польза раздела: Надежность данных и ключевые инсайты" data-cursor-card data-motion-scene data-playing="false">
+    <div class="report-chapter-scene-head"><span>Зачем этот раздел</span><button type="button" class="report-motion-toggle" data-motion-toggle aria-pressed="false">Пауза</button></div>
+    <div class="report-chapter-illustration" title="Смысловая иллюстрация, не график данных"><svg class="chapter-scene chapter-scene-evidence" viewbox="0 0 320 138" aria-hidden="true" focusable="false">
+  
+  <g class="scene-float scene-delay-2"><rect class="scene-paper-back" x="50" y="23" width="93" height="96" rx="12"></rect><path class="scene-line" d="M67 48h47M67 64h36M67 80h44"></path></g>
+  <g class="scene-float"><rect class="scene-paper" x="103" y="12" width="105" height="108" rx="12"></rect><path class="scene-ink" d="M122 37h63M122 53h42M122 70h57"></path><path class="scene-check" d="m124 91 8 8 15-17"></path></g>
+  <g class="scene-inspect"><circle class="scene-glass" cx="229" cy="74" r="29"></circle><path class="scene-line scene-lens-handle" d="m251 96 22 22"></path><path class="scene-check" d="m217 75 8 8 17-18"></path></g>
+  
+</svg></div>
+    <p class="report-chapter-benefit-text">Защищает от решений на слабых данных и показывает, насколько уверенно можно опираться на выводы отчета.</p>
+  </aside>
+</header>
+  <div class="research-overview">
+    <article class="quality-card">
+      <div class="quality-card-head">
+        <span class="metric-label">Надежность выводов</span>
+        <strong>Низкая</strong>
+      </div>
+      <div class="quality-metrics">
+        <div><span>Выборка</span><strong>8</strong></div>
+        <div><span>С рейтингом</span><strong>100%</strong></div>
+        <div><span>Подробные</span><strong>88%</strong></div>
+        <div><span>Источники</span><strong>1</strong></div>
+      </div>
+      
+      <div class="research-limitations">
+        <span class="metric-label">Ограничения исследования</span>
+        <ul>
+          
+          <li>Малая выборка: выводы следует считать гипотезами, а не устойчивыми закономерностями.</li>
+          
+          <li>Использован один источник данных; возможен платформенный перекос выборки.</li>
+          
+        </ul>
+      </div>
+      
+      
+    </article>
+
+    <aside class="research-summary">
+      <span class="metric-label">Резюме состояния опыта</span>
+      <p>Картина смешанная: есть заметные зоны для улучшения. Ключевые зоны трения: Цена и ценность, Поддержка и коммуникация, Скорость и время.</p>
+      <div class="engine-note">
+        <span>Движок анализа</span>
+        <strong>
+          
+          Rule-based
+          
+        </strong>
+      </div>
+      
+    </aside>
+  </div>
+
+  <div class="research-insights">
+    
+    <article class="research-insight">
+      <div class="insight-head">
+        <h3>Цена и ценность</h3>
+        <span class="confidence-badge confidence-low">низкая</span>
+      </div>
+      <p class="research-observation"><strong>Наблюдение:</strong> Тема встречается в 1 из 8 отзывов (12%).</p>
+      <p><strong>Интерпретация:</strong> Тема чаще связана с трением и требует проверки причин на следующих исследованиях.</p>
+      
+      <div class="evidence-preview">
+        
+        <p class="quote-line">Стоимость выросла после диагностики, а узнал я об этом только при оплате.</p>
+        
+        
+      </div>
+      
+    </article>
+    
+    <article class="research-insight">
+      <div class="insight-head">
+        <h3>Поддержка и коммуникация</h3>
+        <span class="confidence-badge confidence-low">низкая</span>
+      </div>
+      <p class="research-observation"><strong>Наблюдение:</strong> Тема встречается в 1 из 8 отзывов (12%).</p>
+      <p><strong>Интерпретация:</strong> Тема чаще связана с трением и требует проверки причин на следующих исследованиях.</p>
+      
+      <div class="evidence-preview">
+        
+        <p class="quote-line">Машину задержали на день. Чтобы узнать статус ремонта, пришлось несколько раз звонить самому.</p>
+        
+        
+      </div>
+      
+    </article>
+    
+    <article class="research-insight">
+      <div class="insight-head">
+        <h3>Скорость и время</h3>
+        <span class="confidence-badge confidence-low">низкая</span>
+      </div>
+      <p class="research-observation"><strong>Наблюдение:</strong> Тема встречается в 1 из 8 отзывов (12%).</p>
+      <p><strong>Интерпретация:</strong> Тема чаще связана с трением и требует проверки причин на следующих исследованиях.</p>
+      
+      <div class="evidence-preview">
+        
+        <p class="quote-line">Машину задержали на день. Чтобы узнать статус ремонта, пришлось несколько раз звонить самому.</p>
+        
+        
+      </div>
+      
+    </article>
+    
+  </div>
+</section>
+
+<section class="report-section cjm-section" id="cjm">
+  <header class="report-section-intro report-chapter">
+  <div class="report-chapter-main">
+    <span class="report-chapter-icon"><svg viewbox="0 0 24 24" aria-hidden="true" focusable="false">
+  
+  <path d="M5 18c3-6 11-2 14-12"></path><circle cx="5" cy="18" r="2"></circle><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="6" r="2"></circle>
+  
+</svg></span>
+    <div class="report-chapter-copy">
+      <p class="eyebrow">Путь клиента</p>
+      <h2>Карта клиентского пути</h2>
+      <p class="report-chapter-context">Путь клиента (CJM) показывает шаги от выбора сервиса до повторного обращения. Здесь отмечены только этапы, о которых клиенты рассказали в отзывах.</p>
+    </div>
+  </div>
+  <aside class="report-chapter-benefit" aria-label="Практическая польза раздела: Карта клиентского пути" data-cursor-card data-motion-scene data-playing="false">
+    <div class="report-chapter-scene-head"><span>Зачем этот раздел</span><button type="button" class="report-motion-toggle" data-motion-toggle aria-pressed="false">Пауза</button></div>
+    <div class="report-chapter-illustration" title="Смысловая иллюстрация, не график данных"><svg class="chapter-scene chapter-scene-journey" viewbox="0 0 320 138" aria-hidden="true" focusable="false">
+  
+  <path class="scene-route" d="M26 58H294"></path><path class="scene-trace" d="M26 58H294"></path>
+  
+  <circle class="scene-stop" cx="26" cy="58" r="13" style="--scene-delay: 0.0s"></circle>
+  <text class="scene-number" x="26" y="62">1</text>
+  
+  <circle class="scene-stop" cx="80" cy="58" r="13" style="--scene-delay: 0.6s"></circle>
+  <text class="scene-number" x="80" y="62">2</text>
+  
+  <circle class="scene-stop" cx="133" cy="58" r="13" style="--scene-delay: 1.2s"></circle>
+  <text class="scene-number" x="133" y="62">3</text>
+  
+  <circle class="scene-stop" cx="187" cy="58" r="13" style="--scene-delay: 1.7999999999999998s"></circle>
+  <text class="scene-number" x="187" y="62">4</text>
+  
+  <circle class="scene-stop" cx="240" cy="58" r="13" style="--scene-delay: 2.4s"></circle>
+  <text class="scene-number" x="240" y="62">5</text>
+  
+  <circle class="scene-stop" cx="294" cy="58" r="13" style="--scene-delay: 3.0s"></circle>
+  <text class="scene-number" x="294" y="62">6</text>
+  
+  <path class="scene-emotion-path" d="M26 85C54 85 54 98 80 98S107 106 133 106S160 91 187 91S213 76 240 76S267 80 294 80"></path>
+  <text class="scene-label" x="160" y="133">Шаг за шагом к лучшему опыту</text>
+  
+</svg></div>
+    <p class="report-chapter-benefit-text">Показывает конкретный этап пути, где клиент теряет доверие, и подсказывает, какой процесс улучшать первым.</p>
+  </aside>
+</header>
+  
+<div class="cjm-map-guide">
+  <p><strong>Как читать карту:</strong> столбцы показывают этапы, строки помогают сравнить опыт клиента на каждом шаге.</p>
+  <span>Листайте карту вправо <span aria-hidden="true">→</span></span>
+</div>
+<nav class="cjm-stage-links" aria-label="Перейти к этапу клиентского пути">
+  <a href="#cjm-stage-1" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><span>1</span>Покупка</a><a href="#cjm-stage-2" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><span>2</span>Использование</a><a href="#cjm-stage-3" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён"><span>3</span>Лояльность</a>
+</nav>
+<div class="cjm-map-shell" data-cjm-navigation>
+<div class="cjm-matrix-scroll" id="cjm-stage-scroll" tabindex="0" role="region" aria-label="Карта клиентского пути. Горизонтальная прокрутка стрелками клавиатуры." aria-describedby="cjm-stage-note">
+  <table class="cjm-matrix">
+    <caption class="cjm-sr-only">Карта клиентского пути: цели, действия, контакты, эмоции, барьеры и улучшения по этапам.</caption>
+    <thead><tr>
+      <th scope="col" class="cjm-row-heading cjm-corner"><span>Клиентский путь</span><strong>Опыт по этапам</strong></th>
+      
+      <th scope="col" id="cjm-stage-1" class="cjm-column-heading">
+        <span class="cjm-step">01</span>
+        <h3>Покупка</h3>
+        
+        <div class="cjm-stage-meta">
+          <span>1 сигнал</span>
+          <span>Уверенность: низкая</span>
+        </div>
+        
+      </th>
+      
+      <th scope="col" id="cjm-stage-2" class="cjm-column-heading">
+        <span class="cjm-step">02</span>
+        <h3>Использование</h3>
+        
+        <div class="cjm-stage-meta">
+          <span>2 сигнала</span>
+          <span>Уверенность: низкая</span>
+        </div>
+        
+      </th>
+      
+      <th scope="col" id="cjm-stage-3" class="cjm-column-heading">
+        <span class="cjm-step">03</span>
+        <h3>Лояльность</h3>
+        
+        <div class="cjm-stage-meta">
+          <span>1 сигнал</span>
+          <span>Уверенность: низкая</span>
+        </div>
+        
+      </th>
+      
+    </tr></thead>
+    <tbody>
+      
+      
+      <tr class="cjm-row-customer_goal">
+        <th scope="row" class="cjm-row-heading"><strong>Цель клиента</strong><span>Какой результат нужен</span></th>
+        
+        <td>
+          
+            <p>Понятно оформить заказ, запись или договорённость.</p>
+          
+        </td>
+        
+        <td>
+          
+            <p>Получить ожидаемый результат и убедиться в качестве.</p>
+          
+        </td>
+        
+        <td>
+          
+            <p>Решить, стоит ли возвращаться и рекомендовать сервис.</p>
+          
+        </td>
+        
+      </tr>
+      
+      <tr class="cjm-row-actions">
+        <th scope="row" class="cjm-row-heading"><strong>Действия</strong><span>Что делает клиент</span></th>
+        
+        <td>
+          <ul class="cjm-cell-list"><li>Уточняет условия</li><li>Записывается или оформляет заказ</li><li>Оплачивает</li></ul>
+
+        </td>
+        
+        <td>
+          <ul class="cjm-cell-list"><li>Использует продукт или услугу</li><li>Оценивает результат</li></ul>
+
+        </td>
+        
+        <td>
+          <ul class="cjm-cell-list"><li>Оценивает опыт</li><li>Оставляет отзыв</li><li>Возвращается или уходит</li></ul>
+
+        </td>
+        
+      </tr>
+      
+      <tr class="cjm-row-touchpoints">
+        <th scope="row" class="cjm-row-heading"><strong>Точки контакта</strong><span>Где встречается с сервисом</span></th>
+        
+        <td>
+          <ul class="cjm-cell-list"><li>Форма записи</li><li>Телефон</li><li>Чат</li><li>Касса</li></ul>
+
+        </td>
+        
+        <td>
+          <ul class="cjm-cell-list"><li>Продукт</li><li>Специалист</li><li>Место оказания услуги</li></ul>
+
+        </td>
+        
+        <td>
+          <ul class="cjm-cell-list"><li>Повторная покупка</li><li>Отзыв</li><li>Программа лояльности</li></ul>
+
+        </td>
+        
+      </tr>
+      
+      <tr class="cjm-row-emotion">
+        <th scope="row" class="cjm-row-heading"><strong>Эмоциональный опыт</strong><span>Что говорит о впечатлениях</span></th>
+        
+        <td>
+          
+            
+              
+              <div class="cjm-emotion cjm-emotion-negative">
+                <svg viewbox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17"></circle><path d="M14 16h.1m11.9 0h.1"></path><path d="M13 28q7-9 14 0"></path></svg>
+                <strong>Негативная</strong>
+              </div>
+            
+          
+        </td>
+        
+        <td>
+          
+            
+              
+              <div class="cjm-emotion cjm-emotion-mixed">
+                <svg viewbox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17"></circle><path d="M14 16h.1m11.9 0h.1"></path><path d="M14 25h12"></path></svg>
+                <strong>Смешанная</strong>
+              </div>
+            
+          
+        </td>
+        
+        <td>
+          
+            
+              
+              <div class="cjm-emotion cjm-emotion-positive">
+                <svg viewbox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17"></circle><path d="M14 16h.1m11.9 0h.1"></path><path d="M13 23q7 9 14 0"></path></svg>
+                <strong>Позитивная</strong>
+              </div>
+            
+          
+        </td>
+        
+      </tr>
+      
+      <tr class="cjm-row-pains">
+        <th scope="row" class="cjm-row-heading"><strong>Барьеры и трение</strong><span>Что мешает на этом шаге</span></th>
+        
+        <td>
+          <ul class="cjm-cell-list"><li>Цена и ценность</li></ul>
+
+        </td>
+        
+        <td>
+          <ul class="cjm-cell-list"><li>Поддержка и коммуникация</li><li>Скорость и время</li></ul>
+
+        </td>
+        
+        <td>
+          
+            <span class="cjm-missing">Барьеры не выделены. Это не означает, что их нет.</span>
+          
+        </td>
+        
+      </tr>
+      
+      <tr class="cjm-row-evidence">
+        <th scope="row" class="cjm-row-heading"><strong>Голос клиента</strong><span>На чём основан вывод</span></th>
+        
+        <td>
+          
+            
+              <blockquote class="cjm-quote">Стоимость выросла после диагностики, а узнал я об этом только при оплате.</blockquote>
+              
+            
+          
+        </td>
+        
+        <td>
+          
+            
+              <blockquote class="cjm-quote">Мастер показал изношенную деталь и объяснил, что можно пока не менять. Лишних работ не предложили.</blockquote>
+              <details class="cjm-evidence"><summary>Ещё цитаты: 1</summary><blockquote class="cjm-quote">Машину задержали на день. Чтобы узнать статус ремонта, пришлось несколько раз звонить самому.</blockquote></details>
+            
+          
+        </td>
+        
+        <td>
+          
+            
+              <blockquote class="cjm-quote">Ремонт сделали хорошо. Если снова возникнет такая проблема, обращусь к ним.</blockquote>
+              
+            
+          
+        </td>
+        
+      </tr>
+      
+      <tr class="cjm-row-opportunities">
+        <th scope="row" class="cjm-row-heading"><strong>Возможности</strong><span>Что можно улучшить</span></th>
+        
+        <td>
+          <ul class="cjm-cell-list"><li>Снизить трение на этапе через улучшение темы «Цена и ценность».</li></ul>
+
+        </td>
+        
+        <td>
+          <ul class="cjm-cell-list"><li>Снизить трение на этапе через улучшение темы «Поддержка и коммуникация».</li><li>Снизить трение на этапе через улучшение темы «Скорость и время».</li></ul>
+
+        </td>
+        
+        <td>
+          <ul class="cjm-cell-list"><li>Сохранить подтверждённые сильные стороны и проверить этап отдельными интервью.</li></ul>
+
+        </td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+<button class="cjm-pager cjm-pager-prev" type="button" data-cjm-prev aria-controls="cjm-stage-scroll" aria-label="Вернуться к первым этапам клиентского пути" title="Вернуться к первым этапам" hidden><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"></path></svg></button>
+<button class="cjm-pager cjm-pager-next" type="button" data-cjm-next aria-controls="cjm-stage-scroll" aria-label="Показать этапы клиентского пути справа" title="Показать этапы справа" hidden><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></button>
+</div>
+<p class="cjm-scroll-status" data-cjm-status role="status" aria-live="polite" hidden></p>
+<p class="cjm-map-note" id="cjm-stage-note">Карта собрана по интерпретации отзывов, а не наблюдению за каждым клиентом. Цели, действия и точки контакта требуют проверки. Показаны только этапы из анализа; отсутствующий этап не означает отсутствие проблем. Эмоции не являются числовой оценкой опыта.</p>
+
+  <a class="btn blueprint-cta" href="#service-blueprint" data-blueprint-open src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён">Кто и что меняет в сервисе <span aria-hidden="true">→</span></a>
+</section>
+
+<section class="report-section blueprint-section" id="service-blueprint" data-blueprint>
+  <header class="report-chapter">
+    <div class="report-chapter-main">
+      <span class="report-chapter-icon" aria-hidden="true"><svg><use href="#icon-backlog"></use></svg></span>
+      <div class="report-chapter-copy">
+        <p class="eyebrow">От понимания к изменениям</p>
+        <h2>Кто и что меняет в сервисе</h2>
+        <p class="report-chapter-context">От выводов к делу: составьте пошаговый план по проблемам и рекомендациям этого отчёта. Выберите, кто есть в команде, или включите режим «Я всё делаю сам».</p>
+        <p class="report-chapter-context">Для команды получится <strong>RACI-матрица</strong>: кто делает, кто отвечает за результат и с кем согласовать работу. Для одного собственника — последовательный личный план. Это <strong>редактируемый черновик</strong>, а не уже назначенные задачи.</p>
+      </div>
+    </div>
+      <figure class="report-chapter-benefit blueprint-scene" data-cursor-card data-motion-scene data-playing="false" data-rating-known="false">
+        <div class="report-chapter-scene-head blueprint-scene-head"><span>От сигнала к изменению</span><button type="button" class="report-motion-toggle" data-motion-toggle aria-pressed="false" hidden>Пауза</button></div>
+        <div class="blueprint-flow" aria-label="Отзыв, команда, действие">
+          <div class="blueprint-flow-node blueprint-flow-review">
+            <span class="blueprint-flow-icon" aria-hidden="true"><svg viewbox="0 0 48 48"><path d="M12 10h24a5 5 0 0 1 5 5v16a5 5 0 0 1-5 5h-6l-9 6v-6h-9a5 5 0 0 1-5-5V15a5 5 0 0 1 5-5Z"></path><path d="M15 20h18M15 27h12"></path></svg></span><strong>Отзыв</strong>
+          </div>
+          <i class="blueprint-flow-arrow" aria-hidden="true">→</i>
+          <div class="blueprint-flow-node blueprint-flow-team">
+            <span class="blueprint-flow-icon" aria-hidden="true"><svg viewbox="0 0 48 48"><circle cx="24" cy="16" r="6"></circle><path d="M14 39v-6a10 10 0 0 1 20 0v6M12 14a5 5 0 0 0-3 9M36 14a5 5 0 0 1 3 9M6 36v-5a7 7 0 0 1 6-7M42 36v-5a7 7 0 0 0-6-7"></path></svg></span><strong>Команда</strong>
+          </div>
+          <i class="blueprint-flow-arrow" aria-hidden="true">→</i>
+          <div class="blueprint-flow-node blueprint-flow-action">
+            <span class="blueprint-flow-icon" aria-hidden="true"><svg class="blueprint-action-ring" viewbox="0 0 48 48"><path d="M9 19A16 16 0 0 1 36 12l4 4M40 7v9h-9M39 29A16 16 0 0 1 12 36l-4-4M8 41v-9h9"></path></svg><svg class="blueprint-action-check" viewbox="0 0 48 48"><path d="m17 24 5 5 9-10"></path></svg></span><strong>Действие</strong>
+          </div>
+        </div>
+        <div class="blueprint-rating">
+          <div class="blueprint-rating-title"><strong>Улучшение сервиса</strong><span aria-hidden="true">↗</span></div>
+          <div class="blueprint-rating-values"><span>Мин. в выборке<strong data-blueprint-min-rating>—</strong></span><span class="blueprint-rating-target">Ориентир<strong>5,0</strong></span></div>
+          <div class="blueprint-rating-track" aria-hidden="true"><span class="blueprint-rating-fill"></span></div>
+          <p class="blueprint-rating-source" data-blueprint-rating-source>Начальная оценка появится, если в загруженных отзывах есть оценки.</p>
+        </div>
+        <figcaption>Иллюстрация возможного улучшения, не прогноз оценки.</figcaption>
+      </figure>
+  </header>
+  <details class="blueprint-builder" data-blueprint-builder>
+    <summary class="blueprint-summary">Составить пошаговый план выполнения</summary>
+    <div class="blueprint-body">
+    <div data-blueprint-setup hidden>
+      <fieldset class="blueprint-team"><legend>1. Кто работает в вашем бизнесе?</legend>
+        <label class="blueprint-solo"><input type="checkbox" data-blueprint-solo> <span><strong>Я единственный собственник, всё делаю сам</strong><small>Личный план по шагам, без распределения на сотрудников</small></span></label>
+        <div data-blueprint-team-fields>
+        <p>Отметьте роли, а не имена. Один человек может совмещать несколько ролей. Предложенное распределение можно изменить в матрице.</p>
+        <div class="blueprint-role-options" data-blueprint-roles>
+          
+          <label><input type="checkbox" value="Собственник" checked>Собственник</label>
+          
+          <label><input type="checkbox" value="Руководитель">Руководитель</label>
+          
+          <label><input type="checkbox" value="Администратор">Администратор</label>
+          
+          <label><input type="checkbox" value="Тренер">Тренер</label>
+          
+          <label><input type="checkbox" value="Специалист по услуге">Специалист по услуге</label>
+          
+          <label><input type="checkbox" value="SMM-специалист">SMM-специалист</label>
+          
+          <label><input type="checkbox" value="Маркетолог">Маркетолог</label>
+          
+          <label><input type="checkbox" value="Техническая поддержка">Техническая поддержка</label>
+          
+        </div>
+        <div class="blueprint-add-role"><label>Другая роль<input type="text" maxlength="80" data-blueprint-custom placeholder="Например, старший тренер"></label><button class="btn btn-secondary" type="button" data-blueprint-add>Добавить роль</button></div>
+        </div>
+      </fieldset>
+      <div class="blueprint-schedule"><label>Начало внедрения <span>(необязательно)</span><input type="date" min="1900-01-01" max="9998-12-31" data-blueprint-start></label><p>Без даты покажем «День 1», «День 3» и далее. С датой — календарные сроки. Это ориентиры: измените их с учётом загрузки и ресурсов.</p></div>
+      <p class="blueprint-notice">Роли и ваши правки не отправляются на сервер или в ИИ. План не назначает задачи сотрудникам. Режимы хранят отдельные черновики только до обновления страницы. Чтобы не потерять правки, скачайте план отдельным файлом.</p>
+      <button class="btn" type="button" data-blueprint-build>Составить план по выводам отчёта</button>
+      <p class="blueprint-status" data-blueprint-status role="status" aria-live="polite"></p>
+      <div data-blueprint-result hidden>
+        <div class="blueprint-result-head"><div><p class="eyebrow">2. От проблемы — к внедрению</p><h3 tabindex="-1" data-blueprint-title>План внедрения и RACI-матрица</h3></div><button class="btn" type="button" data-blueprint-export>Скачать заполненный план</button></div>
+        <p data-blueprint-plan-note>В каждой строке — один шаг. Действия, участие и сроки можно менять. В «Основании» показан исходный вывод; детали выполнения предложены локальным шаблоном и требуют проверки.</p>
+        <div class="blueprint-legend" data-blueprint-legend><span><b>R</b> Делает</span><span><b>A</b> Отвечает за результат</span><span><b>A/R</b> Совмещает</span><span><b>C</b> Консультирует</span><span><b>I</b> В курсе</span></div>
+        <p class="blueprint-notice" data-blueprint-issues role="status" aria-live="polite"></p>
+        <div class="cjm-map-shell blueprint-map-shell" data-cjm-navigation data-manual-navigation="true">
+          <div class="blueprint-scroll cjm-matrix-scroll" id="blueprint-plan-scroll" tabindex="0" role="region" aria-label="План внедрения. Горизонтальная прокрутка стрелками клавиатуры."><table class="blueprint-table blueprint-plan-table" data-blueprint-table><caption class="sr-only">Редактируемый план внедрения</caption></table></div>
+          <button class="cjm-pager cjm-pager-prev" type="button" data-cjm-prev aria-controls="blueprint-plan-scroll" aria-label="Вернуться к началу плана" hidden><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"></path></svg></button>
+          <button class="cjm-pager cjm-pager-next" type="button" data-cjm-next aria-controls="blueprint-plan-scroll" aria-label="Показать остальные столбцы плана" hidden><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></button>
+        </div>
+        <p class="cjm-scroll-status" data-cjm-status role="status" aria-live="polite" hidden></p>
+        <details class="blueprint-recommendations"><summary>Все рекомендации исходного отчёта</summary><ol data-blueprint-recommendations></ol></details>
+        <p class="blueprint-notice">Проверьте план с теми, кто выполняет работу. Отзывы не подтверждают внутренние процессы; рост выручки этот план не обещает. Скачанный HTML-файл сохраняет текущие правки для просмотра и печати в PDF, но не загружается обратно как черновик.</p>
+      </div>
+    </div>
+    <noscript><p>Для конструктора нужен JavaScript. Сам отчёт и CJM доступны без него.</p></noscript>
+  </div>
+  </details>
+  <script type="application/json" data-blueprint-source>{"project": "\u0410\u0432\u0442\u043e\u0441\u0435\u0440\u0432\u0438\u0441 \u00ab\u041f\u0440\u0438\u043c\u0435\u0440\u00bb", "ratings": [5, 5, 2, 2, 5, 2, 3, 4], "recommendations": ["\u0420\u0430\u0441\u0448\u0438\u0440\u0438\u0442\u044c \u0432\u044b\u0431\u043e\u0440\u043a\u0443 \u043c\u0438\u043d\u0438\u043c\u0443\u043c \u0434\u043e 10\u201315 \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u043e\u0442\u0437\u044b\u0432\u043e\u0432 \u043f\u0435\u0440\u0435\u0434 \u043f\u0440\u0438\u043d\u044f\u0442\u0438\u0435\u043c \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u043e\u0432\u044b\u0445 \u0440\u0435\u0448\u0435\u043d\u0438\u0439.", "\u041f\u043e\u043a\u0430\u0437\u044b\u0432\u0430\u0439\u0442\u0435 \u0444\u0438\u043d\u0430\u043b\u044c\u043d\u0443\u044e \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c \u0434\u043e \u043e\u043f\u043b\u0430\u0442\u044b \u0438 \u043e\u0431\u044a\u044f\u0441\u043d\u044f\u0439\u0442\u0435, \u0447\u0442\u043e \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u043e.", "\u041e\u0431\u0443\u0447\u0438\u0442\u0435 \u0444\u0440\u043e\u043d\u0442-\u043b\u0438\u043d\u0438\u044e \u043a\u043e\u0440\u043e\u0442\u043a\u0438\u043c \u0441\u043a\u0440\u0438\u043f\u0442\u0430\u043c \u0434\u043b\u044f \u0441\u043b\u043e\u0436\u043d\u044b\u0445 \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u0439.", "\u041f\u043e\u043a\u0430\u0436\u0438\u0442\u0435 \u0440\u0435\u0430\u043b\u044c\u043d\u043e\u0435 \u0432\u0440\u0435\u043c\u044f \u043e\u0436\u0438\u0434\u0430\u043d\u0438\u044f \u0438 \u0432\u043d\u0435\u0434\u0440\u0438\u0442\u0435 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043e\u0447\u0435\u0440\u0435\u0434\u044c\u044e \u0432 \u043f\u0438\u043a\u043e\u0432\u044b\u0435 \u0447\u0430\u0441\u044b."], "report_date": "\u0423\u0447\u0435\u0431\u043d\u044b\u0439 \u043e\u0442\u0447\u0451\u0442 \u00b7 23 \u043e\u043a\u0442\u044f\u0431\u0440\u044f 2026", "stages": [{"actions": ["\u0423\u0442\u043e\u0447\u043d\u044f\u0435\u0442 \u0443\u0441\u043b\u043e\u0432\u0438\u044f", "\u0417\u0430\u043f\u0438\u0441\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u0438\u043b\u0438 \u043e\u0444\u043e\u0440\u043c\u043b\u044f\u0435\u0442 \u0437\u0430\u043a\u0430\u0437", "\u041e\u043f\u043b\u0430\u0447\u0438\u0432\u0430\u0435\u0442"], "confidence": "low", "count": 1, "customer_goal": "\u041f\u043e\u043d\u044f\u0442\u043d\u043e \u043e\u0444\u043e\u0440\u043c\u0438\u0442\u044c \u0437\u0430\u043a\u0430\u0437, \u0437\u0430\u043f\u0438\u0441\u044c \u0438\u043b\u0438 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0451\u043d\u043d\u043e\u0441\u0442\u044c.", "emotion": "\u041d\u0435\u0433\u0430\u0442\u0438\u0432\u043d\u0430\u044f", "evidence": ["\u0421\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c \u0432\u044b\u0440\u043e\u0441\u043b\u0430 \u043f\u043e\u0441\u043b\u0435 \u0434\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0438, \u0430 \u0443\u0437\u043d\u0430\u043b \u044f \u043e\u0431 \u044d\u0442\u043e\u043c \u0442\u043e\u043b\u044c\u043a\u043e \u043f\u0440\u0438 \u043e\u043f\u043b\u0430\u0442\u0435."], "name": "\u041f\u043e\u043a\u0443\u043f\u043a\u0430", "opportunities": ["\u0421\u043d\u0438\u0437\u0438\u0442\u044c \u0442\u0440\u0435\u043d\u0438\u0435 \u043d\u0430 \u044d\u0442\u0430\u043f\u0435 \u0447\u0435\u0440\u0435\u0437 \u0443\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u0435 \u0442\u0435\u043c\u044b \u00ab\u0426\u0435\u043d\u0430 \u0438 \u0446\u0435\u043d\u043d\u043e\u0441\u0442\u044c\u00bb."], "pains": ["\u0426\u0435\u043d\u0430 \u0438 \u0446\u0435\u043d\u043d\u043e\u0441\u0442\u044c"], "touchpoints": ["\u0424\u043e\u0440\u043c\u0430 \u0437\u0430\u043f\u0438\u0441\u0438", "\u0422\u0435\u043b\u0435\u0444\u043e\u043d", "\u0427\u0430\u0442", "\u041a\u0430\u0441\u0441\u0430"]}, {"actions": ["\u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442 \u043f\u0440\u043e\u0434\u0443\u043a\u0442 \u0438\u043b\u0438 \u0443\u0441\u043b\u0443\u0433\u0443", "\u041e\u0446\u0435\u043d\u0438\u0432\u0430\u0435\u0442 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442"], "confidence": "low", "count": 2, "customer_goal": "\u041f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u043e\u0436\u0438\u0434\u0430\u0435\u043c\u044b\u0439 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u0438 \u0443\u0431\u0435\u0434\u0438\u0442\u044c\u0441\u044f \u0432 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435.", "emotion": "\u0421\u043c\u0435\u0448\u0430\u043d\u043d\u0430\u044f", "evidence": ["\u041c\u0430\u0441\u0442\u0435\u0440 \u043f\u043e\u043a\u0430\u0437\u0430\u043b \u0438\u0437\u043d\u043e\u0448\u0435\u043d\u043d\u0443\u044e \u0434\u0435\u0442\u0430\u043b\u044c \u0438 \u043e\u0431\u044a\u044f\u0441\u043d\u0438\u043b, \u0447\u0442\u043e \u043c\u043e\u0436\u043d\u043e \u043f\u043e\u043a\u0430 \u043d\u0435 \u043c\u0435\u043d\u044f\u0442\u044c. \u041b\u0438\u0448\u043d\u0438\u0445 \u0440\u0430\u0431\u043e\u0442 \u043d\u0435 \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0438\u043b\u0438.", "\u041c\u0430\u0448\u0438\u043d\u0443 \u0437\u0430\u0434\u0435\u0440\u0436\u0430\u043b\u0438 \u043d\u0430 \u0434\u0435\u043d\u044c. \u0427\u0442\u043e\u0431\u044b \u0443\u0437\u043d\u0430\u0442\u044c \u0441\u0442\u0430\u0442\u0443\u0441 \u0440\u0435\u043c\u043e\u043d\u0442\u0430, \u043f\u0440\u0438\u0448\u043b\u043e\u0441\u044c \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0440\u0430\u0437 \u0437\u0432\u043e\u043d\u0438\u0442\u044c \u0441\u0430\u043c\u043e\u043c\u0443."], "name": "\u0418\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u0435", "opportunities": ["\u0421\u043d\u0438\u0437\u0438\u0442\u044c \u0442\u0440\u0435\u043d\u0438\u0435 \u043d\u0430 \u044d\u0442\u0430\u043f\u0435 \u0447\u0435\u0440\u0435\u0437 \u0443\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u0435 \u0442\u0435\u043c\u044b \u00ab\u041f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0430 \u0438 \u043a\u043e\u043c\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u044f\u00bb.", "\u0421\u043d\u0438\u0437\u0438\u0442\u044c \u0442\u0440\u0435\u043d\u0438\u0435 \u043d\u0430 \u044d\u0442\u0430\u043f\u0435 \u0447\u0435\u0440\u0435\u0437 \u0443\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u0435 \u0442\u0435\u043c\u044b \u00ab\u0421\u043a\u043e\u0440\u043e\u0441\u0442\u044c \u0438 \u0432\u0440\u0435\u043c\u044f\u00bb."], "pains": ["\u041f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0430 \u0438 \u043a\u043e\u043c\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u044f", "\u0421\u043a\u043e\u0440\u043e\u0441\u0442\u044c \u0438 \u0432\u0440\u0435\u043c\u044f"], "touchpoints": ["\u041f\u0440\u043e\u0434\u0443\u043a\u0442", "\u0421\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442", "\u041c\u0435\u0441\u0442\u043e \u043e\u043a\u0430\u0437\u0430\u043d\u0438\u044f \u0443\u0441\u043b\u0443\u0433\u0438"]}, {"actions": ["\u041e\u0446\u0435\u043d\u0438\u0432\u0430\u0435\u0442 \u043e\u043f\u044b\u0442", "\u041e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 \u043e\u0442\u0437\u044b\u0432", "\u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044f \u0438\u043b\u0438 \u0443\u0445\u043e\u0434\u0438\u0442"], "confidence": "low", "count": 1, "customer_goal": "\u0420\u0435\u0448\u0438\u0442\u044c, \u0441\u0442\u043e\u0438\u0442 \u043b\u0438 \u0432\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0442\u044c\u0441\u044f \u0438 \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u043e\u0432\u0430\u0442\u044c \u0441\u0435\u0440\u0432\u0438\u0441.", "emotion": "\u041f\u043e\u0437\u0438\u0442\u0438\u0432\u043d\u0430\u044f", "evidence": ["\u0420\u0435\u043c\u043e\u043d\u0442 \u0441\u0434\u0435\u043b\u0430\u043b\u0438 \u0445\u043e\u0440\u043e\u0448\u043e. \u0415\u0441\u043b\u0438 \u0441\u043d\u043e\u0432\u0430 \u0432\u043e\u0437\u043d\u0438\u043a\u043d\u0435\u0442 \u0442\u0430\u043a\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430, \u043e\u0431\u0440\u0430\u0449\u0443\u0441\u044c \u043a \u043d\u0438\u043c."], "name": "\u041b\u043e\u044f\u043b\u044c\u043d\u043e\u0441\u0442\u044c", "opportunities": ["\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d\u043d\u044b\u0435 \u0441\u0438\u043b\u044c\u043d\u044b\u0435 \u0441\u0442\u043e\u0440\u043e\u043d\u044b \u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u044d\u0442\u0430\u043f \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u044b\u043c\u0438 \u0438\u043d\u0442\u0435\u0440\u0432\u044c\u044e."], "pains": [], "touchpoints": ["\u041f\u043e\u0432\u0442\u043e\u0440\u043d\u0430\u044f \u043f\u043e\u043a\u0443\u043f\u043a\u0430", "\u041e\u0442\u0437\u044b\u0432", "\u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430 \u043b\u043e\u044f\u043b\u044c\u043d\u043e\u0441\u0442\u0438"]}]}</script>
+</section>
+
+<section class="report-section" id="sentiment">
+  <header class="report-section-intro report-chapter">
+  <div class="report-chapter-main">
+    <span class="report-chapter-icon"><svg viewbox="0 0 24 24" aria-hidden="true" focusable="false">
+  
+  <circle cx="12" cy="12" r="9"></circle><path d="M8 9h.1m7.9 0h.1M8 14c2 3 6 3 8 0"></path>
+  
+</svg></span>
+    <div class="report-chapter-copy">
+      <p class="eyebrow">Эмоциональный фон</p>
+      <h2>Тональность отзывов</h2>
+      <p class="report-chapter-context">Быстрый срез эмоционального фона без лишних графиков: доля позитива, нейтрали и негатива.</p>
+    </div>
+  </div>
+  <aside class="report-chapter-benefit" aria-label="Практическая польза раздела: Тональность отзывов" data-cursor-card data-motion-scene data-playing="false">
+    <div class="report-chapter-scene-head"><span>Зачем этот раздел</span><button type="button" class="report-motion-toggle" data-motion-toggle aria-pressed="false">Пауза</button></div>
+    <div class="report-chapter-illustration" title="Смысловая иллюстрация, не график данных"><svg class="chapter-scene chapter-scene-sentiment" viewbox="0 0 320 138" aria-hidden="true" focusable="false">
+  
+  
+  <g class="scene-float scene-tone-positive" style="--scene-delay: -0s">
+    <path class="scene-chat" d="M14 28h82v64h-19l-14 14V92H14Z"></path>
+    <path class="scene-face" d="M36 59h.1m19.9 0h.1"></path>
+    <path class="scene-face" d="M35 72q10 12 20 0"></path>
+  </g>
+  
+  <g class="scene-float scene-tone-neutral" style="--scene-delay: -2s">
+    <path class="scene-chat" d="M118 28h82v64h-19l-14 14V92H118Z"></path>
+    <path class="scene-face" d="M140 59h.1m19.9 0h.1"></path>
+    <path class="scene-face" d="M139 78h20"></path>
+  </g>
+  
+  <g class="scene-float scene-tone-negative" style="--scene-delay: -4s">
+    <path class="scene-chat" d="M222 28h82v64h-19l-14 14V92H222Z"></path>
+    <path class="scene-face" d="M244 59h.1m19.9 0h.1"></path>
+    <path class="scene-face" d="M243 82q10-12 20 0"></path>
+  </g>
+  
+  
+</svg></div>
+    <p class="report-chapter-benefit-text">Позволяет за несколько секунд оценить баланс опыта и заметить, когда негатив начинает влиять на репутацию.</p>
+  </aside>
+</header>
+  <div class="sentiment-layout">
+    <div class="stacked-meter" aria-label="Распределение тональности">
+      <span class="meter-positive" style="width: 50.0%"></span>
+      <span class="meter-neutral" style="width: 12.5%"></span>
+      <span class="meter-negative" style="width: 37.5%"></span>
+    </div>
+    <div class="sentiment-legend" aria-label="Легенда тональности">
+      <span><i class="legend-dot legend-positive"></i>Позитив 50.0%</span>
+      <span><i class="legend-dot legend-neutral"></i>Нейтрально 12.5%</span>
+      <span><i class="legend-dot legend-negative"></i>Негатив 37.5%</span>
+    </div>
+    <div class="metric-row">
+      <div><span>Позитивные</span><strong>4</strong></div>
+      <div><span>Нейтральные</span><strong>1</strong></div>
+      <div><span>Негативные</span><strong>3</strong></div>
+    </div>
+  </div>
+  
+</section>
+
+<section class="report-section" id="jtbd">
+  <header class="report-section-intro report-chapter">
+  <div class="report-chapter-main">
+    <span class="report-chapter-icon"><svg viewbox="0 0 24 24" aria-hidden="true" focusable="false">
+  
+  <circle cx="11" cy="13" r="8"></circle><circle cx="11" cy="13" r="4"></circle><path d="m11 13 8-8m-4 0h4v4"></path>
+  
+</svg></span>
+    <div class="report-chapter-copy">
+      <p class="eyebrow">Задачи клиента</p>
+      <h2>Задачи, ради которых клиент выбирает сервис</h2>
+      <p class="report-chapter-context">Задача клиента (JTBD) означает результат, ради которого он обращается: решить проблему, сохранить время или контролировать расходы. Мотивы из отзывов остаются гипотезами для проверки.</p>
+    </div>
+  </div>
+  <aside class="report-chapter-benefit" aria-label="Практическая польза раздела: Задачи, ради которых клиент выбирает сервис" data-cursor-card data-motion-scene data-playing="false">
+    <div class="report-chapter-scene-head"><span>Зачем этот раздел</span><button type="button" class="report-motion-toggle" data-motion-toggle aria-pressed="false">Пауза</button></div>
+    <div class="report-chapter-illustration" title="Смысловая иллюстрация, не график данных"><svg class="chapter-scene chapter-scene-focus" viewbox="0 0 320 138" aria-hidden="true" focusable="false">
+  
+  <g class="scene-focus-pulse"><circle class="scene-target-ring" cx="184" cy="67" r="53"></circle><circle class="scene-target-ring" cx="184" cy="67" r="35"></circle><circle class="scene-target-core" cx="184" cy="67" r="16"></circle></g>
+  <g class="scene-arrow"><path class="scene-line" d="m75 100 108-33m-23-9 23 9-12 22"></path></g>
+  <rect class="scene-paper-back" x="32" y="14" width="88" height="33" rx="9"></rect><text class="scene-label" x="76" y="35">Потребность</text>
+  <text class="scene-label" x="184" y="134">Нужный результат</text>
+  
+</svg></div>
+    <p class="report-chapter-benefit-text">Помогает понять реальную причину выбора сервиса и сформулировать предложения, за которые клиент готов платить.</p>
+  </aside>
+</header>
+  <div class="jtbd-list">
+    
+    <article class="jtbd-card reader-job-card" data-cursor-card>
+      <div class="jtbd-card-head">
+        <span class="reader-card-index" aria-hidden="true">01</span>
+        <div class="reader-card-heading">
+          <span class="metric-label">Сценарий 1 · 1 сигнал</span>
+          <h3>Понимать справедливую цену и не переплачивать.</h3>
+        </div>
+        <span class="confidence-badge confidence-low">Уверенность: низкая</span>
+      </div>
+      <div class="reader-goal"><span>Результат, который нужен клиенту</span><p>Когда нужно выбрать решение в рамках понятного бюджета, клиент хочет понимать справедливую цену и не переплачивать, чтобы быть уверенным, что цена справедлива и нет скрытой переплаты.</p></div>
+      
+      <div class="reader-job-context"><span>Когда возникает потребность</span><p>когда нужно выбрать решение в рамках понятного бюджета</p></div>
+      
+      
+      <dl class="jtbd-facts">
+        <div><dt>Что нужно сделать</dt><dd>Понимать справедливую цену и не переплачивать.</dd></div>
+        <div><dt>Что хочется почувствовать</dt><dd>быть уверенным, что цена справедлива и нет скрытой переплаты</dd></div>
+      </dl>
+      
+      
+      <details class="reader-secondary-details">
+      <summary>Что побуждает обратиться и что останавливает</summary>
+      <div class="forces-grid">
+        <div><span>Почему нужно что-то менять</span><p>1 негативный сигнал показывает текущее трение.</p></div>
+        <div><span>Что привлекает в сервисе</span><p>Ожидаемую ценность нужно дополнительно проверить интервью.</p></div>
+        <div><span>Что вызывает сомнения</span><p>Гипотеза: клиент опасается не получить ожидаемый результат в теме «Цена и ценность»; проверить в интервью.</p></div>
+        <div><span>Что удерживает в привычном решении</span><p>Привычка не подтверждена отзывами; проверить текущий способ решения в интервью.</p></div>
+      </div>
+      </details>
+      
+      
+      <div class="evidence-list">
+        <span class="metric-label">Доказательства</span>
+        
+        <p class="quote-line">Стоимость выросла после диагностики, а узнал я об этом только при оплате.</p>
+        
+        
+      </div>
+      
+    </article>
+    
+    <article class="jtbd-card reader-job-card" data-cursor-card>
+      <div class="jtbd-card-head">
+        <span class="reader-card-index" aria-hidden="true">02</span>
+        <div class="reader-card-heading">
+          <span class="metric-label">Сценарий 2 · 1 сигнал</span>
+          <h3>Быстро решать проблемы и получать уважительное общение.</h3>
+        </div>
+        <span class="confidence-badge confidence-low">Уверенность: низкая</span>
+      </div>
+      <div class="reader-goal"><span>Результат, который нужен клиенту</span><p>Когда возникает вопрос, неопределённость или проблема, клиент хочет быстро решать проблемы и получать уважительное общение, чтобы чувствовать, что клиента слышат и не оставляют одного.</p></div>
+      
+      <div class="reader-job-context"><span>Когда возникает потребность</span><p>когда возникает вопрос, неопределённость или проблема</p></div>
+      
+      
+      <dl class="jtbd-facts">
+        <div><dt>Что нужно сделать</dt><dd>Быстро решать проблемы и получать уважительное общение.</dd></div>
+        <div><dt>Что хочется почувствовать</dt><dd>чувствовать, что клиента слышат и не оставляют одного</dd></div>
+      </dl>
+      
+      
+      <details class="reader-secondary-details">
+      <summary>Что побуждает обратиться и что останавливает</summary>
+      <div class="forces-grid">
+        <div><span>Почему нужно что-то менять</span><p>1 негативный сигнал показывает текущее трение.</p></div>
+        <div><span>Что привлекает в сервисе</span><p>Ожидаемую ценность нужно дополнительно проверить интервью.</p></div>
+        <div><span>Что вызывает сомнения</span><p>Гипотеза: клиент опасается не получить ожидаемый результат в теме «Поддержка и коммуникация»; проверить в интервью.</p></div>
+        <div><span>Что удерживает в привычном решении</span><p>Привычка не подтверждена отзывами; проверить текущий способ решения в интервью.</p></div>
+      </div>
+      </details>
+      
+      
+      <div class="evidence-list">
+        <span class="metric-label">Доказательства</span>
+        
+        <p class="quote-line">Машину задержали на день. Чтобы узнать статус ремонта, пришлось несколько раз звонить самому.</p>
+        
+        
+      </div>
+      
+    </article>
+    
+    <article class="jtbd-card reader-job-card" data-cursor-card>
+      <div class="jtbd-card-head">
+        <span class="reader-card-index" aria-hidden="true">03</span>
+        <div class="reader-card-heading">
+          <span class="metric-label">Сценарий 3 · 1 сигнал</span>
+          <h3>Быстро получить результат без лишних шагов.</h3>
+        </div>
+        <span class="confidence-badge confidence-low">Уверенность: низкая</span>
+      </div>
+      <div class="reader-goal"><span>Результат, который нужен клиенту</span><p>Когда результат нужен без задержек и лишних действий, клиент хочет быстро получить результат без лишних шагов, чтобы сохранять контроль над временем и не испытывать раздражение.</p></div>
+      
+      <div class="reader-job-context"><span>Когда возникает потребность</span><p>когда результат нужен без задержек и лишних действий</p></div>
+      
+      
+      <dl class="jtbd-facts">
+        <div><dt>Что нужно сделать</dt><dd>Быстро получить результат без лишних шагов.</dd></div>
+        <div><dt>Что хочется почувствовать</dt><dd>сохранять контроль над временем и не испытывать раздражение</dd></div>
+      </dl>
+      
+      
+      <details class="reader-secondary-details">
+      <summary>Что побуждает обратиться и что останавливает</summary>
+      <div class="forces-grid">
+        <div><span>Почему нужно что-то менять</span><p>1 негативный сигнал показывает текущее трение.</p></div>
+        <div><span>Что привлекает в сервисе</span><p>Ожидаемую ценность нужно дополнительно проверить интервью.</p></div>
+        <div><span>Что вызывает сомнения</span><p>Гипотеза: клиент опасается не получить ожидаемый результат в теме «Скорость и время»; проверить в интервью.</p></div>
+        <div><span>Что удерживает в привычном решении</span><p>Привычка не подтверждена отзывами; проверить текущий способ решения в интервью.</p></div>
+      </div>
+      </details>
+      
+      
+      <div class="evidence-list">
+        <span class="metric-label">Доказательства</span>
+        
+        <p class="quote-line">Машину задержали на день. Чтобы узнать статус ремонта, пришлось несколько раз звонить самому.</p>
+        
+        
+      </div>
+      
+    </article>
+    
+  </div>
+</section>
+
+<section class="report-section" id="personas">
+  <header class="report-section-intro report-chapter">
+  <div class="report-chapter-main">
+    <span class="report-chapter-icon"><svg viewbox="0 0 24 24" aria-hidden="true" focusable="false">
+  
+  <circle cx="9" cy="8" r="3"></circle><circle cx="18" cy="9" r="2"></circle><path d="M3 20v-2a6 6 0 0 1 12 0v2m1-6a4 4 0 0 1 5 4v2"></path>
+  
+</svg></span>
+    <div class="report-chapter-copy">
+      <p class="eyebrow">Персоны</p>
+      <h2>Клиенты с разными ожиданиями</h2>
+      <p class="report-chapter-context">Персоны объединяют похожие потребности: одним важнее срок, другим цена или объяснение. До 4 гипотез, связанных с отзывами. Это не портреты авторов и не доказанные сегменты рынка.</p>
+    </div>
+  </div>
+  <aside class="report-chapter-benefit" aria-label="Практическая польза раздела: Клиенты с разными ожиданиями" data-cursor-card data-motion-scene data-playing="false">
+    <div class="report-chapter-scene-head"><span>Зачем этот раздел</span><button type="button" class="report-motion-toggle" data-motion-toggle aria-pressed="false">Пауза</button></div>
+    <div class="report-chapter-illustration" title="Смысловая иллюстрация, не график данных"><svg class="chapter-scene chapter-scene-people" viewbox="0 0 320 138" aria-hidden="true" focusable="false">
+  
+  
+  <g class="scene-profile scene-tone-blue" style="--scene-delay: -0.0s">
+    <rect class="scene-profile-card" x="36" y="20" width="50" height="85" rx="14"></rect>
+    <circle class="scene-profile-head" cx="59" cy="42" r="11"></circle>
+    <path class="scene-profile-body" d="M43 81q0-24 16-24t16 24Z"></path>
+    <path class="scene-line" d="M45 94h28"></path>
+  </g>
+  
+  <g class="scene-profile scene-tone-positive" style="--scene-delay: -1.5s">
+    <rect class="scene-profile-card" x="104" y="33" width="50" height="85" rx="14"></rect>
+    <circle class="scene-profile-head" cx="127" cy="55" r="11"></circle>
+    <path class="scene-profile-body" d="M111 94q0-24 16-24t16 24Z"></path>
+    <path class="scene-line" d="M113 107h28"></path>
+  </g>
+  
+  <g class="scene-profile scene-tone-neutral" style="--scene-delay: -3.0s">
+    <rect class="scene-profile-card" x="172" y="16" width="50" height="85" rx="14"></rect>
+    <circle class="scene-profile-head" cx="195" cy="38" r="11"></circle>
+    <path class="scene-profile-body" d="M179 77q0-24 16-24t16 24Z"></path>
+    <path class="scene-line" d="M181 90h28"></path>
+  </g>
+  
+  <g class="scene-profile scene-tone-pink" style="--scene-delay: -4.5s">
+    <rect class="scene-profile-card" x="240" y="30" width="50" height="85" rx="14"></rect>
+    <circle class="scene-profile-head" cx="263" cy="52" r="11"></circle>
+    <path class="scene-profile-body" d="M247 91q0-24 16-24t16 24Z"></path>
+    <path class="scene-line" d="M249 104h28"></path>
+  </g>
+  
+  
+</svg></div>
+    <p class="report-chapter-benefit-text">Помогает собственнику сравнить ожидания клиентов и точнее настроить коммуникацию, сервис и сценарии.</p>
+  </aside>
+</header>
+  
+<div class="report-comparison-scroll" tabindex="0" role="region" aria-label="Сравнение гипотез ожиданий клиентов">
+  <table class="report-comparison-table persona-comparison-table" style="min-width: 740px">
+    <caption>Читайте по строкам: сравнивайте ожидания, ситуации и подтверждения. Это гипотезы по отзывам, а не доказанные сегменты.</caption>
+    <thead><tr><th scope="col">Что сравниваем</th><th scope="col"><span class="report-step-index">01</span><h3>Клиент, сравнивающий цену и ценность</h3></th><th scope="col"><span class="report-step-index">02</span><h3>Клиент, которому важен человеческий контакт</h3></th><th scope="col"><span class="report-step-index">03</span><h3>Клиент, которому нужен быстрый результат</h3></th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Тип ожиданий</th><td><p>Ориентирован на прозрачность стоимости</p></td><td><p>Ориентирован на коммуникацию и поддержку</p></td><td><p>Ориентирован на скорость и предсказуемость</p></td></tr>
+      <tr><th scope="row">Уверенность гипотезы</th><td><span class="confidence-badge confidence-low">Уверенность: низкая</span></td><td><span class="confidence-badge confidence-low">Уверенность: низкая</span></td><td><span class="confidence-badge confidence-low">Уверенность: низкая</span></td></tr>
+      
+      <tr><th scope="row">Главное ожидание</th><td>
+        
+        <p>Понимать справедливую цену и не переплачивать.</p>
+      </td><td>
+        
+        <p>Быстро решать проблемы и получать уважительное общение.</p>
+      </td><td>
+        
+        <p>Быстро получить результат без лишних шагов.</p>
+      </td></tr>
+      
+      <tr><th scope="row">Описание</th><td>
+        
+        <p>Ищет подтверждение, что цена справедлива и финальная стоимость не станет неприятным сюрпризом.</p>
+      </td><td>
+        
+        <p>Сильно реагирует на тон общения, скорость ответов и готовность команды помогать.</p>
+      </td><td>
+        
+        <p>Замечает задержки, очереди и лишние шаги сильнее остальных аспектов сервиса.</p>
+      </td></tr>
+      
+      <tr><th scope="row">Ситуация</th><td>
+        
+        <p>На этапе выбора или оплаты сравнивает варианты и чувствителен к неясным условиям.</p>
+      </td><td>
+        
+        <p>Обращается с вопросом, сложностью или уточнением и оценивает сервис через качество контакта.</p>
+      </td><td>
+        
+        <p>Приходит в сервис с ожиданием понятного времени ответа, записи, получения услуги или результата.</p>
+      </td></tr>
+      
+      <tr><th scope="row">Важный этап обслуживания</th><td>
+        
+        <p>Выбор, покупка, оплата</p>
+      </td><td>
+        
+        <p>Поддержка, сопровождение, работа с претензиями</p>
+      </td><td>
+        
+        <p>Запись, ожидание, получение услуги, поддержка</p>
+      </td></tr>
+      
+      <tr><th scope="row">Что мешает</th><td>
+        
+        <ul><li>непрозрачная цена</li><li>неясно, что входит в стоимость</li><li>сомнение в ценности результата</li></ul>
+        
+      </td><td>
+        
+        <ul><li>холодная или грубая коммуникация</li><li>нет ответственного за обращение</li><li>непонятно, куда идти с проблемой</li></ul>
+        
+      </td><td>
+        
+        <ul><li>ожидание без понятного статуса</li><li>задержки в ответах или выполнении</li><li>лишние организационные шаги</li></ul>
+        
+      </td></tr>
+      
+      <tr><th scope="row">Что важно</th><td>
+        
+        <ul><li>понятная структура цены</li><li>объяснение ценности</li><li>ожидания по стоимости до покупки</li></ul>
+        
+      </td><td>
+        
+        <ul><li>уважительный тон</li><li>быстрый первый ответ</li><li>понятный владелец обращения</li></ul>
+        
+      </td><td>
+        
+        <ul><li>прозрачное время ожидания</li><li>быстрая коммуникация</li><li>понятный следующий шаг</li></ul>
+        
+      </td></tr>
+      
+      <tr><th scope="row">Доказательства</th><td>
+        
+        <p class="report-evidence-text">Стоимость выросла после диагностики, а узнал я об этом только при оплате.</p>
+        
+      </td><td>
+        
+        <p class="report-evidence-text">Машину задержали на день. Чтобы узнать статус ремонта, пришлось несколько раз звонить самому.</p>
+        
+      </td><td>
+        
+        <p class="report-evidence-text">Машину задержали на день. Чтобы узнать статус ремонта, пришлось несколько раз звонить самому.</p>
+        
+      </td></tr>
+      
+    </tbody>
+  </table>
+</div>
+
+</section>
+
+<section class="report-section" id="signals" data-report-explorer>
+  <header class="report-section-intro report-chapter">
+  <div class="report-chapter-main">
+    <span class="report-chapter-icon"><svg viewbox="0 0 24 24" aria-hidden="true" focusable="false">
+  
+  <path d="M3 12h4l3-7 4 14 3-7h4"></path>
+  
+</svg></span>
+    <div class="report-chapter-copy">
+      <p class="eyebrow">Диагностика опыта</p>
+      <h2>Сигналы: боли и сильные стороны</h2>
+      <p class="report-chapter-context">Две полки для чтения: что ломает опыт и что уже работает как конкурентное преимущество.</p>
+    </div>
+  </div>
+  <aside class="report-chapter-benefit" aria-label="Практическая польза раздела: Сигналы: боли и сильные стороны" data-cursor-card data-motion-scene data-playing="false">
+    <div class="report-chapter-scene-head"><span>Зачем этот раздел</span><button type="button" class="report-motion-toggle" data-motion-toggle aria-pressed="false">Пауза</button></div>
+    <div class="report-chapter-illustration" title="Смысловая иллюстрация, не график данных"><svg class="chapter-scene chapter-scene-signals" viewbox="0 0 320 138" aria-hidden="true" focusable="false">
+  
+  <g class="scene-float scene-tone-negative"><rect class="scene-chat" x="30" y="24" width="110" height="82" rx="14"></rect><path class="scene-face" d="M56 43h.1m17.9 0h.1M54 62q10-12 20 0"></path><path class="scene-ink" d="M50 81h65M50 91h40"></path></g>
+  <g class="scene-float scene-delay-2 scene-tone-positive"><rect class="scene-chat" x="180" y="31" width="110" height="82" rx="14"></rect><path class="scene-check" d="m202 54 9 9 16-18"></path><path class="scene-ink" d="M200 85h60M200 96h40"></path></g>
+  <path class="scene-line" d="M160 38v66m-8-57 8-9 8 9m-16 48 8 9 8-9"></path>
+  
+</svg></div>
+    <p class="report-chapter-benefit-text">Отделяет системные проблемы от единичных жалоб и показывает, какие сильные стороны стоит закрепить.</p>
+  </aside>
+</header>
+  
+<div class="report-explorer-controls" data-explorer-controls hidden>
+  <div class="report-filter-buttons" role="group" aria-label="Какие сигналы показать">
+    <button class="report-filter-button" type="button" data-filter-option="all" aria-pressed="true">Все</button><button class="report-filter-button" type="button" data-filter-option="pain" aria-pressed="false">Проблемы</button><button class="report-filter-button" type="button" data-filter-option="strength" aria-pressed="false">Сильные стороны</button>
+  </div>
+  
+  <p class="report-filter-status" data-filter-status role="status" aria-live="polite" aria-atomic="true"></p>
+</div>
+<p class="report-filter-empty" data-filter-empty hidden>Ничего не найдено. Выберите «Все» или измените поиск.</p>
+
+  <div class="signal-grid">
+    <div class="signal-panel signal-panel-negative" data-report-item data-kind="pain">
+      <div class="signal-panel-head">
+        <div class="panel-title">
+          <span class="panel-icon panel-icon-negative"><svg><use href="#icon-pain"></use></svg></span>
+          <h3>Болевые точки</h3>
+        </div>
+        <span>Болевые сигналы</span>
+      </div>
+      
+      
+      <article class="insight-item signal-insight-row">
+        <div class="insight-head">
+          <strong>Цена и ценность</strong>
+          <span>12.0%</span>
+        </div>
+        <div class="signal-progress"><span style="width: 12.0%"></span></div>
+        
+        <p class="quote-line">Стоимость выросла после диагностики, а узнал я об этом только при оплате.</p>
+        
+      </article>
+      
+      
+      <article class="insight-item signal-insight-row">
+        <div class="insight-head">
+          <strong>Поддержка и коммуникация</strong>
+          <span>12.0%</span>
+        </div>
+        <div class="signal-progress"><span style="width: 12.0%"></span></div>
+        
+        <p class="quote-line">Машину задержали на день. Чтобы узнать статус ремонта, пришлось несколько раз звонить самому.</p>
+        
+      </article>
+      
+      
+      <article class="insight-item signal-insight-row">
+        <div class="insight-head">
+          <strong>Скорость и время</strong>
+          <span>12.0%</span>
+        </div>
+        <div class="signal-progress"><span style="width: 12.0%"></span></div>
+        
+        <p class="quote-line">Машину задержали на день. Чтобы узнать статус ремонта, пришлось несколько раз звонить самому.</p>
+        
+      </article>
+      
+    </div>
+
+    <div class="signal-panel signal-panel-positive" data-report-item data-kind="strength">
+      <div class="signal-panel-head">
+        <div class="panel-title">
+          <span class="panel-icon panel-icon-positive"><svg><use href="#icon-strength"></use></svg></span>
+          <h3>Сильные стороны</h3>
+        </div>
+        <span>Сильные сигналы</span>
+      </div>
+      
+      <p class="empty-text">Сильные стороны появятся после более насыщенного анализа отзывов.</p>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="report-section" id="reviews" data-report-explorer>
+  <header class="report-section-intro report-chapter">
+  <div class="report-chapter-main">
+    <span class="report-chapter-icon"><svg viewbox="0 0 24 24" aria-hidden="true" focusable="false">
+  
+  <path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-6l-6 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"></path><path d="M7 9h10M7 13h6"></path>
+  
+</svg></span>
+    <div class="report-chapter-copy">
+      <p class="eyebrow">Сырье</p>
+      <h2>Последние исходные отзывы</h2>
+      <p class="report-chapter-context">Здесь собраны исходные тексты, оценки, даты и источники, на которых построен отчет.</p>
+    </div>
+  </div>
+  <aside class="report-chapter-benefit" aria-label="Практическая польза раздела: Последние исходные отзывы" data-cursor-card data-motion-scene data-playing="false">
+    <div class="report-chapter-scene-head"><span>Зачем этот раздел</span><button type="button" class="report-motion-toggle" data-motion-toggle aria-pressed="false">Пауза</button></div>
+    <div class="report-chapter-illustration" title="Смысловая иллюстрация, не график данных"><svg class="chapter-scene chapter-scene-source" viewbox="0 0 320 138" aria-hidden="true" focusable="false">
+  
+  <g class="scene-float scene-delay-2"><rect class="scene-paper-back" x="59" y="29" width="199" height="87" rx="12"></rect></g>
+  <g class="scene-float"><path class="scene-paper" d="M40 12h229v83H128l-20 20V95H40Z"></path><path class="scene-ink" d="M69 42h169M69 58h146M69 74h103"></path><circle class="scene-source-dot" cx="252" cy="112" r="13"></circle><path class="scene-check" d="m246 112 4 4 8-9"></path></g>
+  
+</svg></div>
+    <p class="report-chapter-benefit-text">Позволяет быстро проверить доказательную базу выводов и вернуться к конкретному отзыву без поиска в исходной карточке.</p>
+  </aside>
+</header>
+  
+  
+<div class="report-explorer-controls" data-explorer-controls hidden>
+  <div class="report-filter-buttons" role="group" aria-label="Оценка исходного отзыва">
+    <button class="report-filter-button" type="button" data-filter-option="all" aria-pressed="true">Все</button><button class="report-filter-button" type="button" data-filter-option="high" aria-pressed="false">4–5 звёзд</button><button class="report-filter-button" type="button" data-filter-option="middle" aria-pressed="false">3 звезды</button><button class="report-filter-button" type="button" data-filter-option="low" aria-pressed="false">1–2 звезды</button><button class="report-filter-button" type="button" data-filter-option="unrated" aria-pressed="false">Без оценки</button>
+  </div>
+  <label class="report-search-label">Найти в тексте<input type="search" data-report-search placeholder="Например, цена или ожидание" maxlength="200"></label>
+  <p class="report-filter-status" data-filter-status role="status" aria-live="polite" aria-atomic="true"></p>
+</div>
+<p class="report-filter-empty" data-filter-empty hidden>Ничего не найдено. Выберите «Все» или измените поиск.</p>
+
+  <p class="report-filter-caveat">Поиск и фильтр работают только по показанным здесь последним 8 отзывам, не по всей базе. Оценка в звёздах не равна тональности текста; итоговые метрики отчёта не пересчитываются.</p>
+  <div class="review-table-wrap">
+    <table class="review-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Оценка</th>
+          <th>Текст</th>
+          <th>Источник</th>
+          <th>Дата</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr id="review-1" data-report-item data-kind="high">
+          <td>1</td>
+          <td>5</td>
+          <td>Объяснили причину поломки и согласовали смету до ремонта. Было понятно, за что плачу.</td>
+          <td>
+            Учебный пример
+          </td>
+          <td></td>
+        </tr>
+        
+        <tr id="review-2" data-report-item data-kind="high">
+          <td>2</td>
+          <td>5</td>
+          <td>Проблему устранили с первого раза. После ремонта ничего не стучит.</td>
+          <td>
+            Учебный пример
+          </td>
+          <td></td>
+        </tr>
+        
+        <tr id="review-3" data-report-item data-kind="low">
+          <td>3</td>
+          <td>2</td>
+          <td>Записали на десять, приняли только к двенадцати. Никто заранее не предупредил.</td>
+          <td>
+            Учебный пример
+          </td>
+          <td></td>
+        </tr>
+        
+        <tr id="review-4" data-report-item data-kind="low">
+          <td>4</td>
+          <td>2</td>
+          <td>Стоимость выросла после диагностики, а узнал я об этом только при оплате.</td>
+          <td>
+            Учебный пример
+          </td>
+          <td></td>
+        </tr>
+        
+        <tr id="review-5" data-report-item data-kind="high">
+          <td>5</td>
+          <td>5</td>
+          <td>Мастер показал изношенную деталь и объяснил, что можно пока не менять. Лишних работ не предложили.</td>
+          <td>
+            Учебный пример
+          </td>
+          <td></td>
+        </tr>
+        
+        <tr id="review-6" data-report-item data-kind="low">
+          <td>6</td>
+          <td>2</td>
+          <td>Машину задержали на день. Чтобы узнать статус ремонта, пришлось несколько раз звонить самому.</td>
+          <td>
+            Учебный пример
+          </td>
+          <td></td>
+        </tr>
+        
+        <tr id="review-7" data-report-item data-kind="middle">
+          <td>7</td>
+          <td>3</td>
+          <td>Обычный сервис: записался, оставил машину, забрал вечером.</td>
+          <td>
+            Учебный пример
+          </td>
+          <td></td>
+        </tr>
+        
+        <tr id="review-8" data-report-item data-kind="high">
+          <td>8</td>
+          <td>4</td>
+          <td>Ремонт сделали хорошо. Если снова возникнет такая проблема, обращусь к ним.</td>
+          <td>
+            Учебный пример
+          </td>
+          <td></td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+
+<div class="report-actions report-actions-footer" aria-label="Действия после чтения отчёта">
+  <a class="btn" href="#service-blueprint" data-blueprint-open src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён">Кто и что меняет в сервисе <span aria-hidden="true">→</span></a>
+  <button type="button" class="btn btn-secondary" data-print-report>Сохранить отчёт в PDF</button>
+  <a class="btn btn-secondary" href="./competitors.html" src="#demo-notice" title="Учебный пример: реальный внешний источник не подключён">Радар возможностей среди конкурентов <span aria-hidden="true">→</span></a>
+  <span class="muted">В окне печати выберите «Сохранить как PDF».</span>
+</div>
+
+
+</div>
+
+    </main>
+    <script>
+      (function () {
+        document.querySelectorAll("[data-print-report]").forEach(function (button) {
+          button.addEventListener("click", function () { window.print(); });
+        });
+        const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+        const prefersReducedMotion = motionPreference.matches;
+        const revealTargets = document.querySelectorAll(
+          ".project-title, .report-section-intro"
+        );
+
+        if (!prefersReducedMotion && "IntersectionObserver" in window) {
+          const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("is-motion-visible");
+              observer.unobserve(entry.target);
+            });
+          }, { threshold: 0 });
+
+          revealTargets.forEach(function (target, index) {
+            target.classList.add("motion-reveal");
+            target.style.setProperty("--reveal-delay", Math.min(index % 3, 2) * 45 + "ms");
+            observer.observe(target);
+          });
+        } else {
+          revealTargets.forEach(function (target) {
+            target.classList.add("is-motion-visible");
+          });
+        }
+
+        document.querySelectorAll('form[method="post"]').forEach(function (form) {
+          form.addEventListener("submit", function (event) {
+            const submitter = event.submitter;
+            if (!submitter || submitter.disabled || event.defaultPrevented || form.hasAttribute("data-download-form")) return;
+            submitter.classList.add("is-submitting");
+            submitter.setAttribute("aria-busy", "true");
+          });
+        });
+
+        document.querySelectorAll("[data-download-form]").forEach(function (form) {
+          const button = form.querySelector('button[type="submit"]');
+          const status = form.querySelector("[data-download-status]");
+          let pending = false;
+          form.addEventListener("submit", async function (event) {
+            event.preventDefault();
+            if (pending) return;
+            pending = true;
+            button.disabled = true;
+            button.classList.add("is-submitting");
+            button.setAttribute("aria-busy", "true");
+            status.textContent = "Подготавливаем файл...";
+            status.classList.remove("is-error");
+            const controller = new AbortController();
+            const timeout = window.setTimeout(function () { controller.abort(); }, 30000);
+            try {
+              const response = await fetch(form.action, {
+                method: "POST", body: new FormData(form), credentials: "same-origin",
+                signal: controller.signal,
+              });
+              const disposition = response.headers.get("Content-Disposition") || "";
+              if (!response.ok || response.redirected || !/^attachment\b/i.test(disposition)) {
+                throw new Error("download-unavailable");
+              }
+              const blob = await response.blob();
+              const url = URL.createObjectURL(blob);
+              const link = document.createElement("a");
+              const filename = /filename="([^"]+)"/i.exec(disposition);
+              link.href = url;
+              link.download = filename ? filename[1] : "chatgpt-prompt.txt";
+              document.body.appendChild(link);
+              link.click();
+              link.remove();
+              window.setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+              status.textContent = "Файл подготовлен. Скачивание передано браузеру.";
+            } catch (error) {
+              status.classList.add("is-error");
+              status.textContent = error.name === "AbortError"
+                ? "Сервер не ответил вовремя. Попробуйте скачать файл еще раз."
+                : "Не удалось скачать файл. Проверьте вход в аккаунт и наличие отзывов, затем повторите попытку.";
+            } finally {
+              window.clearTimeout(timeout);
+              pending = false;
+              button.disabled = false;
+              button.classList.remove("is-submitting");
+              button.removeAttribute("aria-busy");
+            }
+          });
+        });
+
+        window.addEventListener("pageshow", function () {
+          document.querySelectorAll(".is-submitting").forEach(function (button) {
+            if (button.closest("[data-download-form]")) return;
+            button.classList.remove("is-submitting");
+            button.removeAttribute("aria-busy");
+          });
+        });
+
+        const benefitVisuals = document.querySelectorAll(".benefit-visual");
+        benefitVisuals.forEach(function (visual, visualIndex) {
+          const figures = Array.from(visual.children);
+          let hoverRegion = -1;
+          let hoverBounds = [];
+          let pressedRegion = null;
+          let cycle = visualIndex;
+          let resetTimer;
+          visual.dataset.motionReady = "true";
+
+          const resetVisual = function () {
+            visual.removeAttribute("data-active");
+            visual.classList.remove("is-benefit-animating");
+            figures.forEach(function (figure) { figure.style.removeProperty("transform"); });
+          };
+
+          const setHorizontalTracks = function (region, variation) {
+            let tracks;
+            const edge = 0.36 + variation;
+            const shoulder = 0.76 - variation / 2;
+
+            if (region === 0) {
+              tracks = [edge, shoulder, 3 - edge - shoulder];
+            } else if (region === 2) {
+              tracks = [3 - edge - shoulder, shoulder, edge];
+            } else {
+              const center = 0.3 + variation / 2;
+              const left = 1.38 + variation;
+              tracks = [left, center, 3 - left - center];
+            }
+
+            const gap = parseFloat(getComputedStyle(visual).columnGap) || 0;
+            const available = visual.clientWidth - gap * 2;
+            let left = 0;
+            // Keep the grid stable; only the illustrated figures move and scale.
+            tracks.forEach(function (value, index) {
+              const figure = figures[index];
+              const width = available * value / 3;
+              figure.style.transform = "translateX(" + (left - figure.offsetLeft) + "px) scaleX(" + width / figure.offsetWidth + ")";
+              left += width + gap;
+            });
+          };
+
+          const setVerticalScales = function (region, variation) {
+            const grows = cycle % 2 === 0;
+            const scales = grows
+              ? [0.82 - variation, 0.76 + variation / 2, 0.86 - variation / 2]
+              : [0.86 - variation / 2, 0.8 + variation, 0.76 + variation / 2];
+
+            scales[region] = grows ? 1.12 + variation : 0.48 + variation;
+            scales.forEach(function (value, index) {
+              figures[index].style.transform = "scaleY(" + value.toFixed(3) + ")";
+            });
+          };
+
+          const setNodeScales = function (region, variation) {
+            const scales = [1.12 + variation, 1.08, 1.12 - variation];
+            scales[region] = 0.58 + variation;
+            scales.forEach(function (value, index) {
+              figures[index].style.transform = "scale(" + value.toFixed(3) + ")";
+            });
+          };
+
+          const activateVisual = function (region) {
+            if (motionPreference.matches) return;
+            window.clearTimeout(resetTimer);
+            cycle += 1;
+            const variation = ((cycle * 7 + visualIndex * 3) % 5) * 0.018;
+            const axis = visual.dataset.motionAxis;
+
+            if (axis === "horizontal") {
+              setHorizontalTracks(region, variation);
+            } else if (axis === "nodes") {
+              setNodeScales(region, variation);
+            } else {
+              setVerticalScales(region, variation);
+            }
+
+            visual.dataset.active = String(region);
+            visual.classList.add("is-benefit-animating");
+            visual.getAnimations({ subtree: true }).forEach(function (animation) {
+              if (animation.animationName !== "benefit-cube-sheen") return;
+              animation.currentTime = 0;
+              animation.play();
+            });
+            resetTimer = window.setTimeout(resetVisual, 1380);
+          };
+
+          const pointerRegion = function (event, bounds) {
+            const rectangles = bounds || figures.map(function (figure) { return figure.getBoundingClientRect(); });
+            const hit = rectangles.findIndex(function (rect) {
+              return event.clientX >= rect.left && event.clientX <= rect.right;
+            });
+            if (hit !== -1) return hit;
+            const distances = rectangles.map(function (rect) { return Math.abs(event.clientX - (rect.left + rect.right) / 2); });
+            return distances.indexOf(Math.min.apply(null, distances));
+          };
+
+          visual.addEventListener("pointerenter", function (event) {
+            if (event.pointerType && event.pointerType !== "mouse") return;
+            // Freeze hover zones for this visit so deformation cannot select its neighbour.
+            hoverBounds = figures.map(function (figure) { return figure.getBoundingClientRect(); });
+            hoverRegion = pointerRegion(event, hoverBounds);
+            activateVisual(hoverRegion);
+          });
+
+          visual.addEventListener("pointermove", function (event) {
+            if (event.pointerType && event.pointerType !== "mouse") return;
+            const region = pointerRegion(event, hoverBounds.length ? hoverBounds : undefined);
+            if (region === hoverRegion) return;
+            hoverRegion = region;
+            activateVisual(region);
+          });
+
+          visual.addEventListener("pointerleave", function () {
+            hoverRegion = -1;
+            hoverBounds = [];
+          });
+
+          visual.addEventListener("pointerdown", function (event) {
+            pressedRegion = pointerRegion(event);
+          });
+
+          visual.addEventListener("pointercancel", function () {
+            pressedRegion = null;
+          });
+
+          visual.addEventListener("click", function (event) {
+            const region = event.detail === 0 ? (cycle + visualIndex) % 3
+              : (pressedRegion === null ? pointerRegion(event) : pressedRegion);
+            pressedRegion = null;
+            activateVisual(region);
+          });
+
+          const updateMotionPreference = function () {
+            window.clearTimeout(resetTimer);
+            resetVisual();
+            visual.disabled = motionPreference.matches;
+          };
+          motionPreference.addEventListener("change", updateMotionPreference);
+          updateMotionPreference();
+        });
+
+        document.querySelectorAll("[data-review-stream]").forEach(function (stream) {
+          const toggle = stream.closest(".report-visual-card").querySelector("[data-review-pause]");
+          const icon = toggle.querySelector("[data-review-pause-icon]");
+          const reactions = { positive: ["🙂", "😊", "😄"], neutral: ["😐", "😶"], negative: ["😕", "🙁"] };
+          const tones = Object.keys(reactions);
+          let paused = false;
+          let visible = false;
+          const chooseReaction = function (bubble, choices) {
+            const tone = choices[Math.floor(Math.random() * choices.length)];
+            bubble.dataset.sentiment = tone;
+            const faces = reactions[tone];
+            bubble.querySelector(".review-bubble-reaction").textContent = faces[Math.floor(Math.random() * faces.length)];
+          };
+          const initialTones = tones.slice();
+          stream.querySelectorAll(".review-bubble").forEach(function (bubble) {
+            chooseReaction(bubble, initialTones);
+            initialTones.splice(initialTones.indexOf(bubble.dataset.sentiment), 1);
+            // Change the illustration only between cycles, while the bubble is off-screen.
+            bubble.addEventListener("animationiteration", function (event) {
+              if (event.animationName !== "review-bubble-rise" || event.target !== bubble) return;
+              chooseReaction(bubble, tones.filter(function (tone) { return tone !== bubble.dataset.sentiment; }));
+            });
+          });
+          const updatePlayback = function () {
+            stream.dataset.running = String(visible && !paused && !document.hidden && !motionPreference.matches);
+            toggle.disabled = motionPreference.matches;
+            toggle.setAttribute("aria-pressed", String(paused));
+            toggle.setAttribute("aria-label", motionPreference.matches ? "Движение отключено в настройках устройства"
+              : paused ? "Продолжить анимацию отзывов" : "Приостановить анимацию отзывов");
+            toggle.title = toggle.getAttribute("aria-label");
+            icon.setAttribute("d", paused ? "M7 5l7 5-7 5z" : "M7 5v10M13 5v10");
+          };
+          toggle.addEventListener("click", function () { paused = !paused; updatePlayback(); });
+          document.addEventListener("visibilitychange", updatePlayback);
+          motionPreference.addEventListener("change", updatePlayback);
+          if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver(function (entries) {
+              visible = entries[0].isIntersecting;
+              updatePlayback();
+            }, { threshold: 0 });
+            observer.observe(stream);
+          } else {
+            visible = true;
+          }
+          updatePlayback();
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+/* Radar extension of the shared Studio shell, not a separate design system. */
+.competitor-studio .competitor-page {
+  --discovery-ink:var(--studio-ink); --discovery-border:var(--studio-line);
+  --discovery-soft:#f7f5f1; --market-ink:var(--studio-ink); --market-blue:#74611b;
+  max-width:none; margin:0;
+}
+.radar-studio-heading { display:flex; gap:24px; align-items:center; padding:18px 0; }
+.radar-studio-heading > div:last-child { min-width:0; }
+.competitor-studio .radar-studio-heading h1 { font-size:clamp(29px,3.1vw,44px); line-height:1.1; letter-spacing:-.025em; margin:8px 0 12px; color:var(--studio-ink); }
+.competitor-studio .radar-studio-heading p { max-width:65ch; margin:0; color:#49453f; line-height:1.6; }
+.radar-studio-heading .eyebrow { font-size:12px; text-transform:none; letter-spacing:0; color:#66584b; }
+.studio-radar-cover { width:120px; height:120px; background:#f0d9ae; color:#4b3a20; }
+.studio-radar-cover svg { width:54px; height:54px; }
+.radar-studio-tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+.radar-studio-tags span { font-size:11px; color:#5c5042; background:#eee6db; padding:5px 10px; border-radius:6px; }
+.competitor-studio .radar-studio-actions { display:flex; flex-wrap:wrap; gap:10px; margin:0; }
+.competitor-studio .radar-studio-panel { padding:6px 0 24px; min-width:0; }
+.competitor-studio .report-chapter { margin:12px 0 26px; }
+.competitor-studio .report-chapter-copy h2 { font-size:clamp(25px,2.5vw,32px); }
+.competitor-studio .report-chapter-context { font-size:15px; }
+.competitor-studio .report-chapter-benefit .report-chapter-benefit-text { color:#eef6ff; font-size:14px; line-height:1.65; }
+.competitor-studio .market-pilot { padding:6px 0 24px; border:0; border-radius:0; background:none; box-shadow:none; }
+.competitor-studio .market-pilot h2 { font-size:25px; }
+.competitor-studio .market-pilot .report-chapter-copy h2 { font-size:clamp(25px,2.5vw,32px); }
+.competitor-studio :is(.radar-studio-panel > .card,.radar-studio-panel > .control-panel,.market-form) {
+  border:1px solid var(--studio-line); border-radius:14px; padding:24px;
+  background:#fff; box-shadow:none; margin:0 0 22px; color:var(--studio-ink);
+}
+.competitor-studio :is(.card,.radar-opportunity,.market-evidence,.market-candidate) h2 { color:#27231e; font-size:23px; line-height:1.25; }
+.competitor-studio :is(.card,.radar-opportunity,.market-evidence,.market-candidate) h3 { color:#27231e; font-size:19px; line-height:1.35; }
+.competitor-studio :is(.card,.radar-opportunity,.market-evidence,.market-candidate) p { line-height:1.65; }
+.competitor-studio :is(.muted,.hint,.report-filter-caveat) { color:#59534a; }
+.competitor-studio .competitor-form { max-width:none; }
+.competitor-studio :is(input:not([type=checkbox]):not([type=hidden]),textarea) { color:#24201c; background:#fcfbf9; border:1px solid #cfc8bd; border-radius:9px; }
+.competitor-studio :is(input,textarea):focus-visible { outline:2px solid #8c751d; outline-offset:2px; }
+.competitor-studio input[type=checkbox] { accent-color:#776017; }
+.competitor-studio :is(.discovery-notice,.discovery-focus-note,.radar-scope,.competitor-unavailable,.market-next) { color:#514430; border-color:#dfd3bd; background:#f8f3e9; border-radius:10px; }
+.competitor-studio .btn:is([type=submit]:not(.btn-secondary),.radar-primary),.competitor-studio [data-copy-alice-prompt] { background:var(--studio-accent); color:#211e17; }
+.competitor-studio .btn:is([type=submit]:not(.btn-secondary),.radar-primary):hover,.competitor-studio [data-copy-alice-prompt]:hover { background:#ecd400; }
+.competitor-studio button:disabled { opacity:.55; cursor:not-allowed; transform:none !important; }
+.competitor-studio :is(.discovery-more-links,.discovery-search-setup,.discovery-manual-search,.discovery-file-import,.radar-settings) > summary { color:#453d31; font-size:14px; }
+.competitor-studio .card.discovery-manual-search { padding:0; background:#faf8f3; }
+.competitor-studio :is(.discovery-recovery-content,.discovery-recovery-content textarea,.discovery-recovery-content h2,.discovery-recovery-content label) { color:#3b352d; }
+.competitor-studio .discovery-manual-search[open] > summary { border-color:var(--studio-line); }
+.competitor-studio .discovery-source-grid,.competitor-studio .competitor-rollup-grid,.competitor-studio .market-evidence-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.competitor-studio :is(.discovery-source,.competitor-rollup,.market-evidence,.competitor-post,.radar-opportunity) { background:#faf9f6; border:1px solid #e4dfd6; border-radius:12px; box-shadow:none; }
+.competitor-studio :is(.discovery-source-eligible,.market-candidate:has(input:checked)) { background:#f5f4e5; border-color:#b5ab70; }
+.competitor-studio .discovery-source-facts { background:#f0ede7; }
+.competitor-studio .discovery-source-url { overflow-wrap:anywhere; }
+.competitor-studio .radar-empty { background:#faf8f3; color:#4f4639; }
+.competitor-studio .competitor-empty { text-align:center; padding:36px 24px; }
+.competitor-studio .competitor-empty p { max-width:65ch; margin:14px auto 22px; }
+.competitor-studio .competitor-empty .btn { margin:4px; }
+.radar-empty-icon { width:60px; height:60px; display:grid; place-items:center; margin:0 auto 18px; background:#f1e5d0; color:#766039; border-radius:18px; }
+.radar-empty-icon svg { width:32px; height:32px; fill:none; stroke:currentColor; stroke-width:1.7; }
+.competitor-studio .radar-number { background:#f1e5d0; color:#70572c; }
+.competitor-studio :is(.radar-action,.radar-evidence figure) { background:#f2f0e8; border-color:#ddd4c2; color:#353027; }
+.competitor-studio .radar-table-wrap { max-width:100%; overflow-x:auto; border-color:var(--studio-line); }
+.competitor-studio .radar-topic-table :is(th,td) { border-color:#e4dfd6; }
+.competitor-studio .radar-topic-table th { background:#f1ede5; color:#352f26; }
+.competitor-studio .radar-topic-table td { color:#3c352c; }
+.radar-studio-next { display:flex; gap:18px; justify-content:space-between; align-items:center; border-top:1px solid var(--studio-line); padding:20px 0 0; margin-top:24px; }
+.radar-studio-next p { max-width:55ch; color:#514c44; font-size:14px; }
+.radar-studio-next .btn { flex-shrink:0; }
+@media(max-width:1100px) { .competitor-studio .market-fields { grid-template-columns:1fr; } }
+@media(max-width:900px) { .studio-radar-cover { width:94px; height:100px; } .radar-studio-heading { gap:18px; } }
+@media(max-width:650px) {
+  .radar-studio-heading { align-items:flex-start; gap:14px; padding-top:10px; }
+  .competitor-studio .radar-studio-heading h1 { font-size:28px; }
+  .competitor-studio .radar-studio-heading p { font-size:13px; }
+  .studio-radar-cover { width:64px; height:80px; gap:6px; border-radius:9px; }
+  .studio-radar-cover svg { width:35px; height:35px; }
+  .studio-radar-cover span { font-size:10px; }
+  .radar-studio-tags { gap:5px; margin-top:10px; }
+  .competitor-studio :is(.radar-studio-panel > .card,.radar-studio-panel > .control-panel,.market-form) { padding:18px; }
+  .competitor-studio .card.discovery-manual-search { padding:0; }
+  .competitor-studio .discovery-source-grid,.competitor-studio .competitor-rollup-grid,.competitor-studio .market-evidence-grid { grid-template-columns:1fr; }
+  .radar-studio-next { display:block; }
+}
+@media print {
+  .radar-studio-heading { padding:0 0 16px; }
+  .competitor-studio .radar-studio-heading h1 { font-size:25pt; }
+  .radar-studio-heading .studio-cover,.radar-studio-next,.competitor-studio form,.competitor-studio .discovery-file-import,.competitor-studio .discovery-search-setup { display:none !important; }
+  .competitor-studio .radar-studio-panel { padding:12px 0; }
+  .competitor-studio :is(.radar-studio-panel > .card,.market-evidence,.radar-opportunity) { break-inside:avoid; padding:12px; }
+  .competitor-studio .discovery-source-grid,.competitor-studio .competitor-rollup-grid { grid-template-columns:1fr; }
+}

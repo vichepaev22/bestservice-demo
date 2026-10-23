@@ -1,0 +1,81 @@
+/* Reversible report-only layout trial. Existing animation controllers stay intact. */
+body:has([data-report-layout="wide-left"]) .page {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 22px 12px 48px;
+}
+.report-wide-layout { min-width: 0; width: 100%; }
+.report-wide-layout .report-chapter,
+.report-wide-layout .express-hero-grid {
+  grid-template-columns: minmax(275px, .72fr) minmax(0, 2fr);
+}
+.report-wide-layout .report-chapter-benefit,
+.report-wide-layout .express-hero-grid > .report-visual-card { grid-column: 1; grid-row: 1; }
+.report-wide-layout .report-chapter-main,
+.report-wide-layout .express-hero-grid > .friction-card { grid-column: 2; grid-row: 1; }
+.report-wide-layout .report-chapter-context { max-width: 72ch; }
+.report-wide-layout .report-comparison-scroll {
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  border: 1px solid #c6d8ee;
+  border-radius: 14px;
+  margin-top: 18px;
+  background: #fff;
+}
+.report-wide-layout .report-comparison-scroll:focus-visible { outline: 3px solid #237cce; outline-offset: 3px; }
+.report-wide-layout .report-comparison-table { border-collapse: separate; border-spacing: 0; width: 100%; table-layout: fixed; color: #142f4e; }
+.report-wide-layout .report-comparison-table caption { text-align: left; caption-side: top; padding: 14px 18px; color: #385574; font-size: .86rem; line-height: 1.55; background: #f6faff; }
+.report-wide-layout .report-comparison-table th,
+.report-wide-layout .report-comparison-table td { padding: 20px; text-align: left; vertical-align: top; border-right: 1px solid #d7e4f2; border-bottom: 1px solid #d7e4f2; overflow-wrap: anywhere; white-space: normal; font-size: 1rem; line-height: 1.65; }
+.report-wide-layout .report-comparison-table tr > :last-child { border-right: 0; }
+.report-wide-layout .report-comparison-table tbody tr:last-child > * { border-bottom: 0; }
+.report-wide-layout .report-comparison-table thead th { background: #eaf3ff; font-weight: 650; }
+.report-wide-layout .report-comparison-table h3 { margin: 12px 0 0; font-size: 1.08rem; line-height: 1.4; color: #142f4e; }
+.report-wide-layout .report-comparison-table p { margin: 0; font-size: inherit; line-height: inherit; color: #284663; }
+.report-wide-layout .report-comparison-table thead p { margin: 10px 0; font-size: .87rem; font-weight: 400; }
+.report-wide-layout .report-comparison-table ul { padding-left: 20px; margin: 0; }
+.report-wide-layout .report-comparison-table li + li { margin-top: 9px; }
+.report-wide-layout .action-plan-table { min-width: 840px; }
+.report-wide-layout .business-context-table { min-width: 840px; }
+.report-wide-layout .business-context-table h3 { margin: 0; }
+.report-wide-layout .report-period-label { display: inline-block; border: 1px solid #bad3f1; border-radius: 8px; padding: 5px 10px; color: #135ba5; background: #fff; font-weight: 750; }
+.report-wide-layout .report-plan-step { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 12px; align-items: start; }
+.report-wide-layout .report-step-index { display: inline-grid; place-items: center; width: 30px; height: 30px; flex-shrink: 0; color: #165b9f; background: #e7f1ff; border: 1px solid #c1d8f3; border-radius: 9px; font-size: .85rem; font-weight: 750; }
+.report-wide-layout .report-empty-cell { background: #fafcfe; }
+.report-wide-layout .report-empty-label { color: #52697d; font-size: .85rem; }
+.report-wide-layout .persona-comparison-table tr > th:first-child { width: 140px; background: #f0f6fd; }
+.report-wide-layout .persona-comparison-table th[scope="row"] { font-size: .9rem; font-weight: 650; }
+.report-wide-layout .persona-comparison-table .confidence-badge { display: inline-flex; white-space: normal; margin-top: 7px; }
+.report-wide-layout .persona-comparison-table .evidence-disclosure { margin-top: 14px; }
+.report-wide-layout .persona-comparison-table .evidence-disclosure p { margin-top: 12px; }
+.report-wide-layout .persona-comparison-table .report-evidence-text { padding-left: 12px; border-left: 3px solid #9fc3ea; }
+.report-wide-layout .wide-metric-guide { color: #355370; max-width: 100ch; font-size: .93rem; line-height: 1.65; margin: 0 0 18px; }
+.report-wide-layout .business-kpi-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: stretch; }
+.report-wide-layout .business-kpi { align-items: start; background: #f5f9ff; border: 1px solid #cbddee; border-radius: 12px; padding: 20px; }
+.report-wide-layout .business-kpi > div { min-width: 0; }
+.report-wide-layout .business-kpi .panel-icon { color: #246bad; background: #e3effd; }
+.report-wide-layout .business-kpi .wide-metric-kind { display: block; font-size: .75rem; color: #42617e; font-weight: 700; margin-bottom: 10px; }
+.report-wide-layout .business-kpi strong { color: #123b68; }
+@media(max-width: 1000px) {
+  .report-wide-layout .business-kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media(max-width: 800px) {
+  body:has([data-report-layout="wide-left"]) .page { padding: 16px 8px 32px; }
+  .report-wide-layout .report-chapter, .report-wide-layout .express-hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .report-wide-layout .report-chapter-main, .report-wide-layout .express-hero-grid > .friction-card { grid-column: 1; grid-row: 1; }
+  .report-wide-layout .report-chapter-benefit, .report-wide-layout .express-hero-grid > .report-visual-card { grid-column: 1; grid-row: 2; }
+  .report-wide-layout .report-comparison-table th, .report-wide-layout .report-comparison-table td { padding: 16px; }
+}
+@media(max-width: 460px) { .report-wide-layout .business-kpi-grid { grid-template-columns: minmax(0, 1fr); } }
+@media print {
+  body:has([data-report-layout="wide-left"]) .page { width: auto; padding: 0; }
+  .report-wide-layout .report-chapter { display: block; }
+  .report-wide-layout .report-comparison-scroll { overflow: visible; border-radius: 0; }
+  .report-wide-layout .report-comparison-table { min-width: 0 !important; font-size: 8pt; }
+  .report-wide-layout .report-comparison-table th, .report-wide-layout .report-comparison-table td { padding: 6px; font-size: 8pt; }
+  .report-wide-layout .persona-comparison-table tr > th:first-child { width: 14%; }
+  .report-wide-layout .report-plan-step { display: block; }
+  .report-wide-layout .report-step-index { margin-bottom: 5px; }
+}
